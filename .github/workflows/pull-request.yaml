@@ -24,7 +24,7 @@ env:
 
 jobs:
   # Always run this last as it can push new changes and actions will not rerun.
-  pre-commit:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
