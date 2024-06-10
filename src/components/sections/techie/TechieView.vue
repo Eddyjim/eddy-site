@@ -1,10 +1,10 @@
 <template>
-
+  <h>Techie</h>
 </template>
 
 <script>
 export default {
-    name: "SideBar.vue"
+  name: "TechieView"
 }
 </script>
 

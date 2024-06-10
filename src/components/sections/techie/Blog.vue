@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: "CodeArena"
+  name: "Blog"
 }
 </script>
 

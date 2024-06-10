@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: "Hire.cv"
+  name: "CodeArena"
 }
 </script>
 

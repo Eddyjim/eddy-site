@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: "Blog"
+  name: "Hire.cv"
 }
 </script>
 
