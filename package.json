@@ -8,17 +8,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "marked": "^12.0.2",
     "vue": "^3.2.47",
+    "vue-route": "^1.5.1",
     "vue-router": "^4.3.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
     "eslint": "^8.43.0",
+    "sass": "^1.77.4",
     "vite": "^4.1.4"
   },
   "description": "website",
   "main": "index.html",
   "repository": "https://github.com/Eddyjim/eddy-site.git",
-  "author": "Edward Jimenez <edward.jimenez.m@gmail.com>",
+  "author": "Edward Jimenez <eddyjim@eddyjim.com>",
   "license": "MIT"
 }
