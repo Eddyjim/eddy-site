@@ -1,0 +1,152 @@
+experience:
+  - id: team-international
+    company: Team International
+    role: Fullstack Software Developer
+    type: fulltime
+    location: Remote
+    start_date: "2022-01"
+    end_date: present
+    summary: Full-stack development building scalable web and cloud-based systems for international clients.
+    responsibilities:
+      - Developing and maintaining full-stack web applications
+      - Designing cloud-native architectures on AWS
+      - Implementing CI/CD pipelines and DevOps best practices
+      - Collaborating with distributed teams across time zones
+    achievements:
+      - Delivered multiple production applications on time
+      - Improved deployment reliability through automated pipelines
+    technologies:
+      - Python
+      - JavaScript
+      - TypeScript
+      - Vue
+      - React
+      - AWS
+      - Docker
+
+  - id: blackboard
+    company: Blackboard
+    role: Senior Software Engineer
+    type: fulltime
+    location: Remote
+    start_date: "2020-01"
+    end_date: "2021-12"
+    summary: Senior engineer working on LMS platform features and serverless integrations at a leading EdTech company.
+    responsibilities:
+      - Designing and implementing serverless LTI integrations using AWS
+      - Building and maintaining APIs and microservices
+      - Migrating legacy systems to cloud-native architectures
+      - Mentoring junior engineers and conducting code reviews
+    achievements:
+      - Migrated LMS integration to serverless stack using AWS Cloud Services
+      - Built deployment pipelines for serverless infrastructure
+    technologies:
+      - Python
+      - AWS Lambda
+      - API Gateway
+      - DynamoDB
+      - Step Functions
+      - Docker
+
+  - id: alkanza
+    company: Alkanza
+    role: Senior Software Engineer
+    type: fulltime
+    location: "Bogotá, Colombia"
+    start_date: "2018-01"
+    end_date: "2019-12"
+    summary: Senior engineer leading the migration from monolithic to event-driven cloud architecture for a fintech platform.
+    responsibilities:
+      - Designing event-driven architecture for cloud migration
+      - Splitting MVC monolith into microservices
+      - Implementing API gateways and message queues
+      - Leading technical design sessions and architecture reviews
+    achievements:
+      - Designed and implemented migration from MVC monolith to event-based cloud architecture
+      - Upgraded internal tools and APIs from Python 2 to Python 3
+    technologies:
+      - Python
+      - Java
+      - AWS
+      - Docker
+      - Kubernetes
+      - PostgreSQL
+
+  - id: banking-technologies
+    company: Banking Technologies Solutions S.A.S
+    role: Software Architect
+    type: fulltime
+    location: "Bogotá, Colombia"
+    start_date: "2016-06"
+    end_date: "2017-12"
+    summary: Designed software architectures for banking and financial technology solutions.
+    responsibilities:
+      - Defining software architecture for enterprise banking systems
+      - Evaluating technology stacks and making build-vs-buy decisions
+      - Creating technical documentation and architecture diagrams
+      - Ensuring compliance with financial industry standards
+    achievements:
+      - Established architectural patterns adopted across multiple projects
+    technologies:
+      - Java
+      - Spring Boot
+      - Oracle
+      - SQL Server
+
+  - id: hardnetics
+    company: Hardnetics LTDA
+    role: Oracle SOA Developer
+    type: fulltime
+    location: "Bogotá, Colombia"
+    start_date: "2016-01"
+    end_date: "2016-05"
+    summary: Developed Oracle SOA-based integration solutions for enterprise clients.
+    responsibilities:
+      - Developing SOA-based enterprise integrations
+      - Building and maintaining Oracle middleware services
+      - Integrating disparate systems using web services and messaging
+    achievements:
+      - Delivered enterprise integration solutions on schedule
+    technologies:
+      - Java
+      - Oracle
+      - SOA
+
+  - id: fussion-corporation
+    company: Fussion Corporation SAS
+    role: Senior Consultant
+    type: contract
+    location: "Bogotá, Colombia"
+    start_date: "2015-01"
+    end_date: "2015-12"
+    summary: Senior technology consultant providing software development and architecture guidance to enterprise clients.
+    responsibilities:
+      - Consulting on software architecture and technology decisions
+      - Developing custom enterprise applications
+      - Conducting technical assessments and code reviews
+    achievements:
+      - Delivered consulting engagements for multiple enterprise clients
+    technologies:
+      - Java
+      - JavaScript
+      - Oracle
+      - SQL Server
+
+  - id: soaint
+    company: Soaint SAS
+    role: Consultant
+    type: contract
+    location: "Bogotá, Colombia"
+    start_date: "2013-01"
+    end_date: "2014-12"
+    summary: Technology consultant working on enterprise software development projects.
+    responsibilities:
+      - Developing enterprise applications for client organizations
+      - Participating in requirements gathering and technical design
+      - Supporting production systems and resolving issues
+    achievements:
+      - Successfully delivered multiple client projects
+    technologies:
+      - Java
+      - JavaScript
+      - Oracle

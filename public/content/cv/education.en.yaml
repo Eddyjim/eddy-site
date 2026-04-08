@@ -1,0 +1,19 @@
+education:
+  - id: masters-it-arch
+    institution: Universidad de Los Andes
+    degree: Master of IT Architectures
+    field: IT Architectures
+    start_date: "2015-01"
+    end_date: "2017-12"
+    details:
+      - Focus on enterprise and cloud architecture patterns
+      - Bogotá, Colombia
+
+  - id: bachelors-se
+    institution: Escuela Colombiana de Ingeniería
+    degree: Software Engineer
+    field: Software Engineering
+    start_date: "2008-01"
+    end_date: "2013-12"
+    details:
+      - Bogotá, Colombia

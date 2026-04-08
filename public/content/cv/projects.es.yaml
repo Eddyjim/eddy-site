@@ -1,0 +1,42 @@
+projects:
+  - id: serverless-lti-integration
+    title: Integración LTI Serverless
+    description: >-
+      Migración de integración LMS a arquitectura serverless usando servicios
+      en la nube de AWS, incluyendo pipelines de despliegue. Habilitó integración
+      escalable y costo-eficiente entre sistemas de gestión de aprendizaje.
+    technologies:
+      - AWS Lambda
+      - API Gateway
+      - DynamoDB
+      - Step Functions
+      - Python
+    url: ""
+    featured: true
+
+  - id: monolith-split
+    title: División de Monolito
+    description: >-
+      Diseño e implementación de la migración de un proyecto monolítico MVC
+      hacia una arquitectura en la nube basada en eventos, mejorando la
+      escalabilidad y mantenibilidad.
+    technologies:
+      - Python
+      - AWS
+      - Docker
+      - Kubernetes
+      - PostgreSQL
+    url: ""
+    featured: true
+
+  - id: python2-to-python3-migration
+    title: Migración de Python 2 a Python 3
+    description: >-
+      Actualización de herramientas internas y APIs de Python 2 a Python 3,
+      asegurando compatibilidad y aprovechando características modernas del lenguaje.
+    technologies:
+      - Python
+      - Flask
+      - FastAPI
+    url: ""
+    featured: true

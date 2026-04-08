@@ -1,0 +1,17 @@
+profile:
+  name: Edward Jiménez M.
+  title: Software Engineer
+  tagline: Changing the world from source code
+  summary: >-
+    Experienced software developer with 10+ years of experience building scalable
+    web and cloud-based systems. Proficient in full-stack development, DevOps practices,
+    and cloud infrastructure. Passionate about clean code, architectural patterns,
+    and mentoring development teams.
+  contact:
+    email: eddy@eddyjim.com
+    phone: "+57 (301) 773 5242"
+    linkedin: https://linkedin.com/in/eddyjim
+    github: https://github.com/eddyjim
+    website: https://www.eddyjim.com
+    location: "Bogotá, Colombia"
+  pdf_path: /content/cv/cv.en.pdf

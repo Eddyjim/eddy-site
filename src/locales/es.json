@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "hireMe": "Contrátame",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "cta": "Ver Mi CV"
+  },
+  "sections": {
+    "services": "Servicios",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "projects": "Proyectos",
+    "profileSummary": "Resumen Profesional"
+  },
+  "actions": {
+    "downloadCv": "Descargar CV",
+    "expandAll": "Expandir Todo",
+    "collapseAll": "Colapsar Todo",
+    "viewFullCv": "Ver CV Completo",
+    "viewProject": "Ver Proyecto"
+  },
+  "filters": {
+    "all": "Todos",
+    "fulltime": "Tiempo Completo",
+    "contract": "Contrato",
+    "freelance": "Freelance",
+    "internship": "Pasantía",
+    "noResults": "No hay entradas que coincidan con los filtros seleccionados."
+  },
+  "theme": {
+    "light": "Modo claro",
+    "dark": "Modo oscuro",
+    "toggle": "Cambiar tema"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español",
+    "switch": "Cambiar idioma"
+  },
+  "errors": {
+    "contentLoadFailed": "No se pudo cargar el contenido. Por favor, actualice la página.",
+    "pdfUnavailable": "El PDF no está disponible actualmente."
+  },
+  "labels": {
+    "present": "Presente",
+    "technologies": "Tecnologías",
+    "responsibilities": "Responsabilidades",
+    "achievements": "Logros",
+    "yearsExperience": "años",
+    "proficiency": "Competencia"
+  }
+}

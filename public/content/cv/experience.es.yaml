@@ -1,0 +1,152 @@
+experience:
+  - id: team-international
+    company: Team International
+    role: Desarrollador Fullstack de Software
+    type: fulltime
+    location: Remoto
+    start_date: "2022-01"
+    end_date: presente
+    summary: Desarrollo full-stack construyendo sistemas escalables web y en la nube para clientes internacionales.
+    responsibilities:
+      - Desarrollo y mantenimiento de aplicaciones web full-stack
+      - Diseño de arquitecturas cloud-native en AWS
+      - Implementación de pipelines CI/CD y mejores prácticas DevOps
+      - Colaboración con equipos distribuidos en diferentes zonas horarias
+    achievements:
+      - Entrega de múltiples aplicaciones en producción a tiempo
+      - Mejora en la confiabilidad de despliegues mediante pipelines automatizados
+    technologies:
+      - Python
+      - JavaScript
+      - TypeScript
+      - Vue
+      - React
+      - AWS
+      - Docker
+
+  - id: blackboard
+    company: Blackboard
+    role: Ingeniero de Software Senior
+    type: fulltime
+    location: Remoto
+    start_date: "2020-01"
+    end_date: "2021-12"
+    summary: Ingeniero senior trabajando en funcionalidades de plataforma LMS e integraciones serverless en empresa líder de EdTech.
+    responsibilities:
+      - Diseño e implementación de integraciones LTI serverless usando AWS
+      - Construcción y mantenimiento de APIs y microservicios
+      - Migración de sistemas legados a arquitecturas cloud-native
+      - Mentoría a ingenieros junior y revisiones de código
+    achievements:
+      - Migración de integración LMS a stack serverless usando servicios en la nube de AWS
+      - Construcción de pipelines de despliegue para infraestructura serverless
+    technologies:
+      - Python
+      - AWS Lambda
+      - API Gateway
+      - DynamoDB
+      - Step Functions
+      - Docker
+
+  - id: alkanza
+    company: Alkanza
+    role: Ingeniero de Software Senior
+    type: fulltime
+    location: "Bogotá, Colombia"
+    start_date: "2018-01"
+    end_date: "2019-12"
+    summary: Ingeniero senior liderando la migración de arquitectura monolítica a basada en eventos en la nube para plataforma fintech.
+    responsibilities:
+      - Diseño de arquitectura basada en eventos para migración cloud
+      - División de monolito MVC en microservicios
+      - Implementación de API gateways y colas de mensajes
+      - Liderazgo de sesiones de diseño técnico y revisiones de arquitectura
+    achievements:
+      - Diseño e implementación de migración de monolito MVC a arquitectura cloud basada en eventos
+      - Actualización de herramientas internas y APIs de Python 2 a Python 3
+    technologies:
+      - Python
+      - Java
+      - AWS
+      - Docker
+      - Kubernetes
+      - PostgreSQL
+
+  - id: banking-technologies
+    company: Banking Technologies Solutions S.A.S
+    role: Arquitecto de Software
+    type: fulltime
+    location: "Bogotá, Colombia"
+    start_date: "2016-06"
+    end_date: "2017-12"
+    summary: Diseño de arquitecturas de software para soluciones de tecnología bancaria y financiera.
+    responsibilities:
+      - Definición de arquitectura de software para sistemas bancarios empresariales
+      - Evaluación de stacks tecnológicos y decisiones de construir vs comprar
+      - Creación de documentación técnica y diagramas de arquitectura
+      - Aseguramiento del cumplimiento con estándares de la industria financiera
+    achievements:
+      - Establecimiento de patrones arquitectónicos adoptados en múltiples proyectos
+    technologies:
+      - Java
+      - Spring Boot
+      - Oracle
+      - SQL Server
+
+  - id: hardnetics
+    company: Hardnetics LTDA
+    role: Desarrollador Oracle SOA
+    type: fulltime
+    location: "Bogotá, Colombia"
+    start_date: "2016-01"
+    end_date: "2016-05"
+    summary: Desarrollo de soluciones de integración basadas en Oracle SOA para clientes empresariales.
+    responsibilities:
+      - Desarrollo de integraciones empresariales basadas en SOA
+      - Construcción y mantenimiento de servicios middleware Oracle
+      - Integración de sistemas dispares usando servicios web y mensajería
+    achievements:
+      - Entrega de soluciones de integración empresarial en plazo
+    technologies:
+      - Java
+      - Oracle
+      - SOA
+
+  - id: fussion-corporation
+    company: Fussion Corporation SAS
+    role: Consultor Senior
+    type: contract
+    location: "Bogotá, Colombia"
+    start_date: "2015-01"
+    end_date: "2015-12"
+    summary: Consultor senior de tecnología proporcionando orientación en desarrollo de software y arquitectura a clientes empresariales.
+    responsibilities:
+      - Consultoría en arquitectura de software y decisiones tecnológicas
+      - Desarrollo de aplicaciones empresariales personalizadas
+      - Realización de evaluaciones técnicas y revisiones de código
+    achievements:
+      - Entrega de compromisos de consultoría para múltiples clientes empresariales
+    technologies:
+      - Java
+      - JavaScript
+      - Oracle
+      - SQL Server
+
+  - id: soaint
+    company: Soaint SAS
+    role: Consultor
+    type: contract
+    location: "Bogotá, Colombia"
+    start_date: "2013-01"
+    end_date: "2014-12"
+    summary: Consultor tecnológico trabajando en proyectos de desarrollo de software empresarial.
+    responsibilities:
+      - Desarrollo de aplicaciones empresariales para organizaciones cliente
+      - Participación en levantamiento de requisitos y diseño técnico
+      - Soporte a sistemas en producción y resolución de incidentes
+    achievements:
+      - Entrega exitosa de múltiples proyectos de clientes
+    technologies:
+      - Java
+      - JavaScript
+      - Oracle

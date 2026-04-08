@@ -1,0 +1,19 @@
+education:
+  - id: masters-it-arch
+    institution: Universidad de Los Andes
+    degree: Maestría en Arquitecturas de TI
+    field: Arquitecturas de TI
+    start_date: "2015-01"
+    end_date: "2017-12"
+    details:
+      - Enfoque en patrones de arquitectura empresarial y cloud
+      - Bogotá, Colombia
+
+  - id: bachelors-se
+    institution: Escuela Colombiana de Ingeniería
+    degree: Ingeniero de Sistemas
+    field: Ingeniería de Software
+    start_date: "2008-01"
+    end_date: "2013-12"
+    details:
+      - Bogotá, Colombia

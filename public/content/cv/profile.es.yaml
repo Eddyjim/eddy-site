@@ -1,0 +1,17 @@
+profile:
+  name: Edward Jiménez M.
+  title: Ingeniero de Software
+  tagline: Changing the world from source code
+  summary: >-
+    Desarrollador de software con más de 10 años de experiencia construyendo
+    sistemas escalables basados en la web y en la nube. Competente en desarrollo
+    full-stack, prácticas DevOps e infraestructura en la nube. Apasionado por el
+    clean-code, patrones de diseño y la mentoría de equipos de desarrollo.
+  contact:
+    email: eddy@eddyjim.com
+    phone: "+57 (301) 773 5242"
+    linkedin: https://linkedin.com/in/eddyjim
+    github: https://github.com/eddyjim
+    website: https://www.eddyjim.com
+    location: "Bogotá, Colombia"
+  pdf_path: /content/cv/cv.es.pdf

@@ -1,0 +1,196 @@
+categories:
+  - name: Lenguajes
+    slug: languages
+    skills:
+      - name: Python
+        proficiency: 5
+        years: 10
+        featured: true
+      - name: Java
+        proficiency: 4
+        years: 10
+        featured: true
+      - name: JavaScript
+        proficiency: 5
+        years: 10
+        featured: true
+      - name: TypeScript
+        proficiency: 4
+        years: 5
+        featured: true
+      - name: Ruby
+        proficiency: 3
+        years: 3
+        featured: false
+      - name: Bash
+        proficiency: 4
+        years: 8
+        featured: false
+
+  - name: Frameworks Backend
+    slug: backend-frameworks
+    skills:
+      - name: Flask
+        proficiency: 5
+        years: 6
+        featured: true
+      - name: FastAPI
+        proficiency: 5
+        years: 4
+        featured: true
+      - name: Starlette
+        proficiency: 4
+        years: 3
+        featured: false
+      - name: Falcon
+        proficiency: 3
+        years: 2
+        featured: false
+      - name: Express
+        proficiency: 4
+        years: 5
+        featured: true
+      - name: Rails
+        proficiency: 3
+        years: 3
+        featured: false
+      - name: Spring Boot
+        proficiency: 4
+        years: 5
+        featured: false
+
+  - name: Frameworks Frontend
+    slug: frontend-frameworks
+    skills:
+      - name: React
+        proficiency: 4
+        years: 5
+        featured: true
+      - name: Vue
+        proficiency: 5
+        years: 5
+        featured: true
+      - name: Angular
+        proficiency: 3
+        years: 3
+        featured: false
+      - name: Astro
+        proficiency: 3
+        years: 2
+        featured: false
+      - name: Bootstrap
+        proficiency: 4
+        years: 8
+        featured: false
+      - name: Material
+        proficiency: 4
+        years: 4
+        featured: false
+
+  - name: Bases de Datos
+    slug: databases
+    skills:
+      - name: PostgreSQL
+        proficiency: 5
+        years: 8
+        featured: true
+      - name: MySQL
+        proficiency: 4
+        years: 6
+        featured: false
+      - name: MongoDB
+        proficiency: 4
+        years: 5
+        featured: true
+      - name: Oracle
+        proficiency: 3
+        years: 4
+        featured: false
+      - name: SQL Server
+        proficiency: 3
+        years: 3
+        featured: false
+
+  - name: DevOps y CI/CD
+    slug: devops-cicd
+    skills:
+      - name: Docker
+        proficiency: 5
+        years: 7
+        featured: true
+      - name: Kubernetes
+        proficiency: 4
+        years: 4
+        featured: true
+      - name: GitHub Actions
+        proficiency: 5
+        years: 4
+        featured: false
+      - name: Jenkins
+        proficiency: 4
+        years: 5
+        featured: false
+      - name: Terraform
+        proficiency: 4
+        years: 3
+        featured: true
+
+  - name: Cloud (AWS)
+    slug: cloud-aws
+    skills:
+      - name: AWS Lambda
+        proficiency: 5
+        years: 5
+        featured: true
+      - name: API Gateway
+        proficiency: 4
+        years: 5
+        featured: false
+      - name: S3
+        proficiency: 5
+        years: 6
+        featured: false
+      - name: DynamoDB
+        proficiency: 4
+        years: 4
+        featured: false
+      - name: Step Functions
+        proficiency: 4
+        years: 3
+        featured: false
+      - name: CodeBuild
+        proficiency: 4
+        years: 3
+        featured: false
+      - name: Kinesis
+        proficiency: 3
+        years: 2
+        featured: false
+      - name: CloudWatch / X-Ray
+        proficiency: 4
+        years: 4
+        featured: false
+      - name: Tray.io
+        proficiency: 3
+        years: 2
+        featured: false
+
+  - name: Herramientas
+    slug: tools
+    skills:
+      - name: Git
+        proficiency: 5
+        years: 10
+        featured: false
+      - name: Figma
+        proficiency: 3
+        years: 3
+        featured: false
+      - name: Postman
+        proficiency: 4
+        years: 6
+        featured: false
+      - name: JIRA
+        proficiency: 4
+        years: 7
+        featured: false

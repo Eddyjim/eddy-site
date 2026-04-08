@@ -1,0 +1,70 @@
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{green}
+
+\usepackage[margin=1.2cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{parcolumns}
+\usepackage{ragged2e} % For ragged right text formatting
+
+% Personal info
+\name{Edward}{Jiménez M.}
+\title{Ingeniero de Software}
+\address{Bogotá, Colombia}{}
+\phone[mobile]{+57~(301)~773~5242}
+\email{eddy@eddyjim.com}
+\homepage{www.eddyjim.com}
+\social[linkedin]{eddyjim}
+\social[github]{eddyjim}
+\quote{Changing the world from source code}
+
+\begin{document}
+	
+	\makecvtitle
+	
+	% Summary
+	\section*{Resumen}
+Desarrollador de software con más de 10 años de experiencia construyendo sistemas escalables basados en la web y en la nube. Competente en desarrollo full-stack, prácticas DevOps e infraestructura en la nube. Apasionado por el clean-code, patrones de diseño y la mentoría de equipos de desarrollo.
+
+	
+	\begin{parcolumns}[colwidths={1=0.60\textwidth, 2=0.35\textwidth}]{2}
+		
+		\colchunk{%
+			\section{Stack Tecnológico}
+			\cvitem{Lenguajes}{\begin{tabular}[t]{@{}l@{}}Python, Java, JavaScript, TypeScriptj, Ruby, Bash\end{tabular}}
+			\cvitem{Frameworks Backend}{\begin{tabular}[t]{@{}l@{}}Flask, FastAPI, Starlatte, Falcon, Express, Rails, Springboot\end{tabular}}
+			\cvitem{Frameworks Frontend}{\begin{tabular}[t]{@{}l@{}}React, Vue, Angular, Astro, Bootstrap, Material\end{tabular}}
+			\cvitem{Bases de Datos}{\begin{tabular}[t]{@{}l@{}}PostgreSQL, MySQL, MongoDB, Oracle, SQLServer\end{tabular}}
+			\cvitem{DevOps/CI-CD}{\begin{tabular}[t]{@{}l@{}}Docker, Kubernetes, GitHub Actions, Jenkins, Terraform\end{tabular}}
+			\cvitem{Cloud}{\begin{tabular}[t]{@{}l@{}}AWS (Lambda, API Gateway, S3, DynamoDB, Step Functions, \\CodeBuild, Kinesis, CloudWatch, Xray), Tray.io\end{tabular}}
+			\cvitem{Herramientas}{\begin{tabular}[t]{@{}l@{}}Git, Figma, Postman, JIRA\end{tabular}}
+		}
+		
+		\colchunk{%
+			\section{Experiencia}
+			\raggedright
+			\cventry{2022}{\parbox[t]{\linewidth}{Fullstack Software\newline Developer}}{Team International}{}{}{}
+			\cventry{2020}{\parbox[t]{\linewidth}{Senior Software\newline Engineer}}{Blackboard}{}{}{}
+			\cventry{2018}{\parbox[t]{\linewidth}{Senior Software\newline Engineer}}{Alkanza}{}{}{}
+			\cventry{2016}{\parbox[t]{\linewidth}{Arquitecto de Software}}{Banking Technologies\newline Solutions S.A.S}{}{}{}
+			\cventry{2016}{\parbox[t]{\linewidth}{Oracle SOA Developer}}{Hardnetics LTDA}{}{}{}
+			\cventry{2015}{\parbox[t]{\linewidth}{Consultor Senior}}{Fussion Corporation SAS}{}{}{}
+			\cventry{2013}{\parbox[t]{\linewidth}{Consultor}}{Soaint SAS}{}{}{}
+		}
+		
+	\end{parcolumns}
+	
+	
+\section{Proyectos Relevantes}
+\cvitem{Integración LTI Serverless}{Migración de integración LMS a arquitectura serverless usando servicios en la nube de AWS, incluyendo pipelines de despliegue.}
+\cvitem{División de Monolito}{Diseño e implementación de la migración de un proyecto monolítico MVC hacia una arquitectura en la nube basada en eventos.}
+\cvitem{Migración de Python2 a Python3}{Actualización de herramientas internas y APIs a Python3.}
+
+	
+	% Education
+	\section{Educación}
+	\cventry{2017}{Maestria en Architecturas de TI}{Universidad de Los Andes}{Bogotá}{}{Master}
+	\cventry{2013}{Ingeniero de Sistemas}{Escuela Colombiana de Ingeniería}{Bogotá}{}{Bachelor}
+	
+\end{document}

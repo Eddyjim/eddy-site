@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Home",
+    "hireMe": "Hire Me",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "cta": "View My CV"
+  },
+  "sections": {
+    "services": "Services",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "profileSummary": "Professional Summary"
+  },
+  "actions": {
+    "downloadCv": "Download CV",
+    "expandAll": "Expand All",
+    "collapseAll": "Collapse All",
+    "viewFullCv": "View Full CV",
+    "viewProject": "View Project"
+  },
+  "filters": {
+    "all": "All",
+    "fulltime": "Full-time",
+    "contract": "Contract",
+    "freelance": "Freelance",
+    "internship": "Internship",
+    "noResults": "No entries match the selected filters."
+  },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "toggle": "Toggle theme"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español",
+    "switch": "Switch language"
+  },
+  "errors": {
+    "contentLoadFailed": "Content could not be loaded. Please refresh the page.",
+    "pdfUnavailable": "PDF is currently unavailable."
+  },
+  "labels": {
+    "present": "Present",
+    "technologies": "Technologies",
+    "responsibilities": "Responsibilities",
+    "achievements": "Achievements",
+    "yearsExperience": "years",
+    "proficiency": "Proficiency"
+  }
+}
