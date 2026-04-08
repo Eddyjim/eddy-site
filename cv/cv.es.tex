@@ -1,0 +1,70 @@
+% CV en Español - Fuente LaTeX
+% Compilar con: pdflatex cv.es.tex
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+\pagestyle{empty}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Edward Jimenez}} \\[4pt]
+{\large Ingeniero de Software Senior \& Consultor} \\[4pt]
+\href{mailto:eddyjim@eddyjim.com}{eddyjim@eddyjim.com} |
+\href{https://github.com/Eddyjim}{GitHub} |
+\href{https://linkedin.com/in/eddyjim}{LinkedIn} |
+\href{https://eddyjim.com}{eddyjim.com}
+\end{center}
+
+\section{Resumen Profesional}
+Ingeniero de software y consultor con experiencia, apasionado por construir aplicaciones
+robustas y escalables. Especializado en desarrollo full-stack, arquitectura cloud
+y liderazgo técnico.
+
+\section{Experiencia}
+
+\textbf{Consultor de Software Senior} -- Consultor Independiente \hfill Ene 2022 -- Presente \\
+\textit{Remoto} \\
+\begin{itemize}[nosep, leftmargin=*]
+  \item Diseño e implementación de aplicaciones web escalables
+  \item Revisiones de arquitectura y evaluaciones técnicas
+  \item Mentoría a equipos de desarrollo en mejores prácticas
+\end{itemize}
+
+\textbf{Ingeniero de Software Senior} -- Acme Corp \hfill Mar 2019 -- Dic 2021 \\
+\textit{Nueva York, NY} \\
+\begin{itemize}[nosep, leftmargin=*]
+  \item Lideró un equipo de 5 ingenieros construyendo la plataforma principal
+  \item Mejoró el rendimiento de la aplicación en un 60\%
+\end{itemize}
+
+\textbf{Desarrollador Full-Stack} -- TechStart Inc \hfill Jun 2016 -- Feb 2019 \\
+\textit{San Francisco, CA} \\
+\begin{itemize}[nosep, leftmargin=*]
+  \item Construyó el primer dashboard en tiempo real usado por más de 10,000 usuarios
+  \item Implementó pruebas automatizadas reduciendo reportes de bugs en un 50\%
+\end{itemize}
+
+\section{Educación}
+
+\textbf{Maestría en Ciencias, Ciencias de la Computación} -- Universidad de Tecnología \hfill 2014 -- 2016 \\
+\textbf{Ingeniería en Software} -- Universidad Nacional \hfill 2010 -- 2014
+
+\section{Habilidades}
+\textbf{Lenguajes:} JavaScript, TypeScript, Python, Java, SQL \\
+\textbf{Frameworks:} Vue.js, React, Node.js, Spring Boot \\
+\textbf{Cloud \& DevOps:} AWS, Docker, Kubernetes, CI/CD \\
+\textbf{Herramientas:} Git, Agile/Scrum, TDD
+
+\end{document}

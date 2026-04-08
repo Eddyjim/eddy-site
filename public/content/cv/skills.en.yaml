@@ -1,0 +1,80 @@
+categories:
+  - name: Languages
+    slug: languages
+    skills:
+      - name: JavaScript
+        proficiency: 5
+        years: 10
+        featured: true
+      - name: TypeScript
+        proficiency: 4
+        years: 5
+        featured: true
+      - name: Python
+        proficiency: 4
+        years: 7
+        featured: true
+      - name: Java
+        proficiency: 4
+        years: 6
+        featured: false
+      - name: SQL
+        proficiency: 4
+        years: 8
+        featured: false
+
+  - name: Frameworks
+    slug: frameworks
+    skills:
+      - name: Vue.js
+        proficiency: 5
+        years: 6
+        featured: true
+      - name: React
+        proficiency: 4
+        years: 4
+        featured: true
+      - name: Node.js
+        proficiency: 5
+        years: 8
+        featured: true
+      - name: Spring Boot
+        proficiency: 3
+        years: 3
+        featured: false
+
+  - name: Cloud & DevOps
+    slug: cloud-devops
+    skills:
+      - name: AWS
+        proficiency: 4
+        years: 5
+        featured: true
+      - name: Docker
+        proficiency: 4
+        years: 5
+        featured: true
+      - name: Kubernetes
+        proficiency: 3
+        years: 3
+        featured: false
+      - name: CI/CD
+        proficiency: 4
+        years: 6
+        featured: false
+
+  - name: Tools & Practices
+    slug: tools-practices
+    skills:
+      - name: Git
+        proficiency: 5
+        years: 10
+        featured: false
+      - name: Agile/Scrum
+        proficiency: 4
+        years: 7
+        featured: false
+      - name: TDD
+        proficiency: 4
+        years: 5
+        featured: false

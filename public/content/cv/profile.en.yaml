@@ -1,0 +1,15 @@
+profile:
+  name: Edward Jimenez
+  title: Senior Software Engineer & Consultant
+  tagline: Building scalable solutions and empowering teams through expert consultancy
+  summary: >-
+    Experienced software engineer and consultant with a passion for building robust,
+    scalable applications. Specializing in full-stack development, cloud architecture,
+    and technical leadership. I help businesses turn complex requirements into elegant,
+    maintainable solutions.
+  contact:
+    email: eddyjim@eddyjim.com
+    linkedin: https://linkedin.com/in/eddyjim
+    github: https://github.com/Eddyjim
+    website: https://eddyjim.com
+  pdf_path: /content/cv/cv.en.pdf

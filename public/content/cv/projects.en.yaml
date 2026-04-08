@@ -1,0 +1,52 @@
+projects:
+  - id: cloud-migration-platform
+    title: Cloud Migration Platform
+    description: >-
+      Designed and built an automated cloud migration tool that helps businesses
+      move their infrastructure to AWS with minimal downtime.
+    technologies:
+      - AWS
+      - Python
+      - Terraform
+      - Docker
+    url: ""
+    featured: true
+
+  - id: realtime-analytics-dashboard
+    title: Real-Time Analytics Dashboard
+    description: >-
+      Built a high-performance dashboard for monitoring business metrics
+      with real-time data streaming and interactive visualizations.
+    technologies:
+      - Vue.js
+      - Node.js
+      - WebSocket
+      - D3.js
+    url: ""
+    featured: true
+
+  - id: ecommerce-platform
+    title: E-Commerce Platform
+    description: >-
+      Developed a full-featured e-commerce platform with inventory management,
+      payment processing, and customer analytics.
+    technologies:
+      - React
+      - Java
+      - Spring Boot
+      - PostgreSQL
+    url: ""
+    featured: true
+
+  - id: devops-toolkit
+    title: DevOps Automation Toolkit
+    description: >-
+      Created a suite of CLI tools for automating common DevOps tasks including
+      deployment, monitoring, and incident response.
+    technologies:
+      - Python
+      - Docker
+      - Kubernetes
+      - Bash
+    url: ""
+    featured: false

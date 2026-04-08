@@ -1,0 +1,20 @@
+services:
+  - name: Desarrollo Full-Stack
+    slug: full-stack-development
+    description: Desarrollo de aplicaciones web de extremo a extremo usando frameworks modernos y mejores prácticas.
+    icon: bi-code-slash
+
+  - name: Consultoría de Arquitectura
+    slug: architecture-consulting
+    description: Diseño y revisión de arquitecturas de sistemas escalables para aplicaciones cloud-native.
+    icon: bi-diagram-3
+
+  - name: Asesoría Técnica
+    slug: technical-advisory
+    description: Orientación tecnológica estratégica para alinear decisiones de ingeniería con objetivos de negocio.
+    icon: bi-lightbulb
+
+  - name: Ampliación de Equipos
+    slug: team-augmentation
+    description: Soporte de ingeniería práctico para acelerar la entrega y capacidades de su equipo.
+    icon: bi-people

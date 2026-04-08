@@ -5,7 +5,7 @@ import Footer from "@/components/sections/Footer.vue";
 
 import NavigationMenu from "@/components/sections/navigation/NavigationBar.vue";
 
-import "bootstrap-icons/font/bootstrap-icons.css";
+// bootstrap-icons CSS is now imported via main.scss
 
 </script>
 
@@ -16,8 +16,11 @@ import "bootstrap-icons/font/bootstrap-icons.css";
   </header>
 
   <main>
-    <RouterView/>
-
+    <RouterView v-slot="{ Component }">
+      <Transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </Transition>
+    </RouterView>
   </main>
 
   <footer>
@@ -43,5 +46,15 @@ footer {
 
 .grid-container > * {
   padding: 1rem;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

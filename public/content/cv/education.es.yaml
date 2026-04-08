@@ -1,0 +1,20 @@
+education:
+  - id: masters-cs
+    institution: Universidad de Tecnología
+    degree: Maestría en Ciencias
+    field: Ciencias de la Computación
+    start_date: "2014-09"
+    end_date: "2016-05"
+    details:
+      - Especialización en sistemas distribuidos y computación en la nube
+      - Tesis sobre patrones de arquitectura de microservicios escalables
+
+  - id: bachelors-se
+    institution: Universidad Nacional
+    degree: Ingeniería
+    field: Ingeniería de Software
+    start_date: "2010-09"
+    end_date: "2014-06"
+    details:
+      - Honores en la lista del decano
+      - Proyecto final sobre visualización de datos en tiempo real

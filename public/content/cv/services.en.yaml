@@ -1,0 +1,20 @@
+services:
+  - name: Full-Stack Development
+    slug: full-stack-development
+    description: End-to-end web application development using modern frameworks and best practices.
+    icon: bi-code-slash
+
+  - name: Architecture Consulting
+    slug: architecture-consulting
+    description: Design and review of scalable system architectures for cloud-native applications.
+    icon: bi-diagram-3
+
+  - name: Technical Advisory
+    slug: technical-advisory
+    description: Strategic technology guidance to align engineering decisions with business goals.
+    icon: bi-lightbulb
+
+  - name: Team Augmentation
+    slug: team-augmentation
+    description: Hands-on engineering support to accelerate your team's delivery and capabilities.
+    icon: bi-people

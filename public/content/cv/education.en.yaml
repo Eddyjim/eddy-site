@@ -1,0 +1,20 @@
+education:
+  - id: masters-cs
+    institution: University of Technology
+    degree: Master of Science
+    field: Computer Science
+    start_date: "2014-09"
+    end_date: "2016-05"
+    details:
+      - Specialized in distributed systems and cloud computing
+      - Thesis on scalable microservices architecture patterns
+
+  - id: bachelors-se
+    institution: National University
+    degree: Bachelor of Engineering
+    field: Software Engineering
+    start_date: "2010-09"
+    end_date: "2014-06"
+    details:
+      - Dean's list honors
+      - Capstone project on real-time data visualization

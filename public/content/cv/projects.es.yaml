@@ -1,0 +1,52 @@
+projects:
+  - id: cloud-migration-platform
+    title: Plataforma de Migración Cloud
+    description: >-
+      Diseñé y construí una herramienta automatizada de migración cloud que ayuda
+      a las empresas a mover su infraestructura a AWS con tiempo de inactividad mínimo.
+    technologies:
+      - AWS
+      - Python
+      - Terraform
+      - Docker
+    url: ""
+    featured: true
+
+  - id: realtime-analytics-dashboard
+    title: Dashboard de Analítica en Tiempo Real
+    description: >-
+      Construí un dashboard de alto rendimiento para monitorear métricas de negocio
+      con streaming de datos en tiempo real y visualizaciones interactivas.
+    technologies:
+      - Vue.js
+      - Node.js
+      - WebSocket
+      - D3.js
+    url: ""
+    featured: true
+
+  - id: ecommerce-platform
+    title: Plataforma de Comercio Electrónico
+    description: >-
+      Desarrollé una plataforma de comercio electrónico completa con gestión de inventario,
+      procesamiento de pagos y analítica de clientes.
+    technologies:
+      - React
+      - Java
+      - Spring Boot
+      - PostgreSQL
+    url: ""
+    featured: true
+
+  - id: devops-toolkit
+    title: Kit de Herramientas DevOps
+    description: >-
+      Creé un conjunto de herramientas CLI para automatizar tareas comunes de DevOps
+      incluyendo despliegue, monitoreo y respuesta a incidentes.
+    technologies:
+      - Python
+      - Docker
+      - Kubernetes
+      - Bash
+    url: ""
+    featured: false
