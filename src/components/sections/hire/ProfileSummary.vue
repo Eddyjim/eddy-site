@@ -17,16 +17,15 @@
         <i class="bi bi-download me-2" aria-hidden="true"></i>
         {{ t('actions.downloadCv') }}
       </a>
-      <button
-        v-else
-        type="button"
-        class="btn btn-download btn-lg px-4"
-        disabled
-        :title="t('errors.pdfUnavailable')"
-      >
-        <i class="bi bi-download me-2" aria-hidden="true"></i>
-        {{ t('actions.downloadCv') }}
-      </button>
+      <div v-else class="text-center">
+        <span class="btn btn-outline-secondary btn-lg px-4 btn-unavailable">
+          <i class="bi bi-download me-2" aria-hidden="true"></i>
+          {{ t('actions.downloadCv') }}
+        </span>
+        <p class="text-body-secondary mt-2 mb-0 small">
+          ({{ t('errors.pdfUnavailable') }})
+        </p>
+      </div>
     </div>
   </section>
 </template>
@@ -68,7 +67,7 @@ const { t } = useI18n()
 .profile-blob-1 {
   width: 400px;
   height: 400px;
-  background: #6366f1;
+  background: var(--color-primary);
   top: -20%;
   left: -5%;
 }
@@ -76,7 +75,7 @@ const { t } = useI18n()
 .profile-blob-2 {
   width: 350px;
   height: 350px;
-  background: #06b6d4;
+  background: var(--color-secondary);
   bottom: -20%;
   right: -5%;
 }
@@ -102,9 +101,17 @@ const { t } = useI18n()
   color: #fff;
 }
 
-.btn-download:disabled {
-  opacity: 0.5;
-  transform: none;
-  box-shadow: none;
+.btn-unavailable {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile-blob,
+  .profile-blob-1,
+  .profile-blob-2 {
+    animation: none;
+  }
 }
 </style>

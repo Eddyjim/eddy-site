@@ -1,52 +1,42 @@
 projects:
-  - id: cloud-migration-platform
-    title: Plataforma de Migración Cloud
+  - id: serverless-lti-integration
+    title: Integración LTI Serverless
     description: >-
-      Diseñé y construí una herramienta automatizada de migración cloud que ayuda
-      a las empresas a mover su infraestructura a AWS con tiempo de inactividad mínimo.
+      Migración de integración LMS a arquitectura serverless usando servicios
+      en la nube de AWS, incluyendo pipelines de despliegue. Habilitó integración
+      escalable y costo-eficiente entre sistemas de gestión de aprendizaje.
     technologies:
-      - AWS
+      - AWS Lambda
+      - API Gateway
+      - DynamoDB
+      - Step Functions
       - Python
-      - Terraform
+    url: ""
+    featured: true
+
+  - id: monolith-split
+    title: División de Monolito
+    description: >-
+      Diseño e implementación de la migración de un proyecto monolítico MVC
+      hacia una arquitectura en la nube basada en eventos, mejorando la
+      escalabilidad y mantenibilidad.
+    technologies:
+      - Python
+      - AWS
       - Docker
-    url: ""
-    featured: true
-
-  - id: realtime-analytics-dashboard
-    title: Dashboard de Analítica en Tiempo Real
-    description: >-
-      Construí un dashboard de alto rendimiento para monitorear métricas de negocio
-      con streaming de datos en tiempo real y visualizaciones interactivas.
-    technologies:
-      - Vue.js
-      - Node.js
-      - WebSocket
-      - D3.js
-    url: ""
-    featured: true
-
-  - id: ecommerce-platform
-    title: Plataforma de Comercio Electrónico
-    description: >-
-      Desarrollé una plataforma de comercio electrónico completa con gestión de inventario,
-      procesamiento de pagos y analítica de clientes.
-    technologies:
-      - React
-      - Java
-      - Spring Boot
+      - Kubernetes
       - PostgreSQL
     url: ""
     featured: true
 
-  - id: devops-toolkit
-    title: Kit de Herramientas DevOps
+  - id: python2-to-python3-migration
+    title: Migración de Python 2 a Python 3
     description: >-
-      Creé un conjunto de herramientas CLI para automatizar tareas comunes de DevOps
-      incluyendo despliegue, monitoreo y respuesta a incidentes.
+      Actualización de herramientas internas y APIs de Python 2 a Python 3,
+      asegurando compatibilidad y aprovechando características modernas del lenguaje.
     technologies:
       - Python
-      - Docker
-      - Kubernetes
-      - Bash
+      - Flask
+      - FastAPI
     url: ""
-    featured: false
+    featured: true

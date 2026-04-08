@@ -1,5 +1,5 @@
 <template>
-  <section class="projects-section py-5 bg-body-tertiary">
+  <section class="projects-section py-5">
     <div class="container">
       <h2 class="section-heading">{{ t('sections.projects') }}</h2>
 
@@ -57,6 +57,10 @@ const { t } = useI18n()
 </script>
 
 <style scoped>
+.projects-section {
+  background: var(--color-background-soft);
+}
+
 .project-card {
   position: relative;
 }

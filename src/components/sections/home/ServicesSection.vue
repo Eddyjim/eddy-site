@@ -34,13 +34,6 @@ const { t } = useI18n()
 </template>
 
 <style scoped>
-.section-heading {
-  font-weight: 700;
-  font-size: 1.75rem;
-  letter-spacing: -0.02em;
-  margin-bottom: 2rem;
-}
-
 .service-card {
   border: 1px solid var(--color-border);
   border-radius: 0.75rem;

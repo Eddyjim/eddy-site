@@ -57,8 +57,6 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  position: relative;
-  font-weight: normal;
 }
 
 body {
@@ -78,7 +76,6 @@ body {
 #app {
   margin: 0 auto;
   padding: 0;
-  font-weight: normal;
 }
 
 // 8. Links — use primary indigo

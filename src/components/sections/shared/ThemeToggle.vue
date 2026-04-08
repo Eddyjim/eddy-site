@@ -20,6 +20,12 @@ const { t } = useI18n()
 button {
   font-size: 1.2rem;
   color: var(--color-text);
-  border: none;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 </style>

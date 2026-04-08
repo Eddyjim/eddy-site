@@ -5,6 +5,7 @@
     "contact": "Contact"
   },
   "hero": {
+    "greeting": "Hello, I'm",
     "cta": "View My CV"
   },
   "sections": {
@@ -27,7 +28,8 @@
     "fulltime": "Full-time",
     "contract": "Contract",
     "freelance": "Freelance",
-    "internship": "Internship"
+    "internship": "Internship",
+    "noResults": "No entries match the selected filters."
   },
   "theme": {
     "light": "Light mode",

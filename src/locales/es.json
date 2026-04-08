@@ -5,6 +5,7 @@
     "contact": "Contacto"
   },
   "hero": {
+    "greeting": "Hola, soy",
     "cta": "Ver Mi CV"
   },
   "sections": {
@@ -27,7 +28,8 @@
     "fulltime": "Tiempo Completo",
     "contract": "Contrato",
     "freelance": "Freelance",
-    "internship": "Pasantía"
+    "internship": "Pasantía",
+    "noResults": "No hay entradas que coincidan con los filtros seleccionados."
   },
   "theme": {
     "light": "Modo claro",

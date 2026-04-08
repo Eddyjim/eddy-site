@@ -1,20 +1,20 @@
 services:
   - name: Desarrollo Full-Stack
     slug: full-stack-development
-    description: Desarrollo de aplicaciones web de extremo a extremo usando frameworks modernos y mejores prácticas.
+    description: Desarrollo de aplicaciones web de extremo a extremo con Python, JavaScript y frameworks modernos como Vue, React, Flask y FastAPI.
     icon: bi-code-slash
 
-  - name: Consultoría de Arquitectura
-    slug: architecture-consulting
-    description: Diseño y revisión de arquitecturas de sistemas escalables para aplicaciones cloud-native.
+  - name: Arquitectura Cloud y Serverless
+    slug: cloud-architecture
+    description: Diseño e implementación de sistemas escalables cloud-native en AWS, incluyendo arquitecturas serverless con Lambda, API Gateway y Step Functions.
+    icon: bi-cloud
+
+  - name: DevOps y CI/CD
+    slug: devops-cicd
+    description: Contenerización con Docker y Kubernetes, pipelines de despliegue automatizados con GitHub Actions e infraestructura como código con Terraform.
+    icon: bi-gear
+
+  - name: Arquitectura y Migración
+    slug: architecture-migration
+    description: Migración de monolitos a microservicios, diseño de arquitectura basada en eventos y modernización de sistemas legados con más de 10 años de experiencia.
     icon: bi-diagram-3
-
-  - name: Asesoría Técnica
-    slug: technical-advisory
-    description: Orientación tecnológica estratégica para alinear decisiones de ingeniería con objetivos de negocio.
-    icon: bi-lightbulb
-
-  - name: Ampliación de Equipos
-    slug: team-augmentation
-    description: Soporte de ingeniería práctico para acelerar la entrega y capacidades de su equipo.
-    icon: bi-people

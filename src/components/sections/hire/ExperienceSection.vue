@@ -101,7 +101,7 @@
       </div>
 
       <p v-if="filteredEntries.length === 0" class="text-body-secondary text-center py-3">
-        {{ t('filters.all') }}
+        {{ t('filters.noResults') }}
       </p>
     </div>
   </section>
@@ -212,24 +212,19 @@ const formatEndDate = (dateStr) => {
   transform: rotate(-180deg);
 }
 
-/* Slide transition for expand/collapse */
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 0.25s ease;
-  overflow: hidden;
+/* Slide transition for expand/collapse (GPU-accelerated) */
+.slide-enter-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
-
-.slide-enter-from,
+.slide-leave-active {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.slide-enter-from {
+  opacity: 0;
+  transform: translateY(-8px);
+}
 .slide-leave-to {
   opacity: 0;
-  max-height: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.slide-enter-to,
-.slide-leave-from {
-  opacity: 1;
-  max-height: 600px;
+  transform: translateY(-4px);
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="skills-section py-5 bg-body-tertiary">
+  <section class="skills-section py-5">
     <div class="container">
       <h2 class="section-heading">{{ t('sections.skills') }}</h2>
 
@@ -31,11 +31,10 @@
                 <div
                   class="progress"
                   role="progressbar"
-                  :aria-label="skill.name + ' ' + t('labels.proficiency')"
+                  :aria-label="skill.name + ': ' + (skill.proficiency * 20) + '% ' + t('labels.proficiency')"
                   :aria-valuenow="skill.proficiency * 20"
                   aria-valuemin="0"
                   aria-valuemax="100"
-                  style="height: 8px;"
                 >
                   <div
                     class="progress-bar skill-progress"
@@ -49,7 +48,7 @@
       </div>
 
       <p v-if="filteredCategories.length === 0" class="text-body-secondary text-center py-3">
-        {{ t('filters.all') }}
+        {{ t('filters.noResults') }}
       </p>
     </div>
   </section>
@@ -88,7 +87,12 @@ const filteredCategories = computed(() => {
   border-radius: 0.5rem;
 }
 
+.skills-section {
+  background: var(--color-background-soft);
+}
+
 .progress {
+  height: 8px;
   background-color: var(--color-background-mute);
   border-radius: 0.5rem;
   overflow: hidden;

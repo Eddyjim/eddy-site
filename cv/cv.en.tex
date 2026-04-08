@@ -1,69 +1,70 @@
-% English CV - LaTeX Source
-% Compile with: pdflatex cv.en.tex
-\documentclass[a4paper,11pt]{article}
+\documentclass[11pt,letterpaper,sans]{moderncv}
 
+\moderncvstyle{classic}
+\moderncvcolor{green}
+
+\usepackage[margin=1.2cm]{geometry}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{geometry}
-\usepackage{enumitem}
-\usepackage{titlesec}
-\usepackage{hyperref}
+\usepackage{parcolumns}
+\usepackage{ragged2e} % For ragged right text formatting
 
-\geometry{margin=1in}
-\pagestyle{empty}
-
-\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{12pt}{6pt}
+% Personal info
+\name{Edward}{Jiménez M.}
+\title{Software Engineer}
+\address{Bogotá, Colombia}{}
+\phone[mobile]{+57~(301)~773~5242}
+\email{eddy@eddyjim.com}
+\homepage{www.eddyjim.com}
+\social[linkedin]{eddyjim}
+\social[github]{eddyjim}
+\quote{Changing the world from source code}
 
 \begin{document}
-
-\begin{center}
-{\LARGE \textbf{Edward Jimenez}} \\[4pt]
-{\large Senior Software Engineer \& Consultant} \\[4pt]
-\href{mailto:eddyjim@eddyjim.com}{eddyjim@eddyjim.com} |
-\href{https://github.com/Eddyjim}{GitHub} |
-\href{https://linkedin.com/in/eddyjim}{LinkedIn} |
-\href{https://eddyjim.com}{eddyjim.com}
-\end{center}
-
-\section{Professional Summary}
-Experienced software engineer and consultant with a passion for building robust,
-scalable applications. Specializing in full-stack development, cloud architecture,
-and technical leadership.
-
-\section{Experience}
-
-\textbf{Senior Software Consultant} -- Independent Consultant \hfill Jan 2022 -- Present \\
-\textit{Remote} \\
-\begin{itemize}[nosep, leftmargin=*]
-  \item Designing and implementing scalable web applications
-  \item Conducting architecture reviews and technical assessments
-  \item Mentoring development teams on best practices
-\end{itemize}
-
-\textbf{Senior Software Engineer} -- Acme Corp \hfill Mar 2019 -- Dec 2021 \\
-\textit{New York, NY} \\
-\begin{itemize}[nosep, leftmargin=*]
-  \item Led a team of 5 engineers building the core product platform
-  \item Improved application performance by 60\% through code optimization
-\end{itemize}
-
-\textbf{Full-Stack Developer} -- TechStart Inc \hfill Jun 2016 -- Feb 2019 \\
-\textit{San Francisco, CA} \\
-\begin{itemize}[nosep, leftmargin=*]
-  \item Built the company's first real-time dashboard used by 10,000+ users
-  \item Implemented automated testing reducing bug reports by 50\%
-\end{itemize}
-
-\section{Education}
-
-\textbf{Master of Science, Computer Science} -- University of Technology \hfill 2014 -- 2016 \\
-\textbf{Bachelor of Engineering, Software Engineering} -- National University \hfill 2010 -- 2014
-
-\section{Skills}
-\textbf{Languages:} JavaScript, TypeScript, Python, Java, SQL \\
-\textbf{Frameworks:} Vue.js, React, Node.js, Spring Boot \\
-\textbf{Cloud \& DevOps:} AWS, Docker, Kubernetes, CI/CD \\
-\textbf{Tools:} Git, Agile/Scrum, TDD
-
+	
+	\makecvtitle
+	
+	% Summary
+	\section*{Summary}
+	Experienced software developer with 10+ years of experience building scalable web and cloud-based systems. Proficient in full-stack development, DevOps practices, and cloud infrastructure. Passionate about clean code, architectural patterns, and mentoring development teams.
+	
+	\begin{parcolumns}[colwidths={1=0.65\textwidth, 2=0.30\textwidth}]{2}
+		
+		\colchunk{%
+			\section{Tech Stacks}
+			\cvitem{Languages}{\begin{tabular}[t]{@{}l@{}}Python, Java, JavaScript, TypeScriptj, Ruby, Bash\end{tabular}}
+			\cvitem{Backend Frameworks}{\begin{tabular}[t]{@{}l@{}}Flask, FastAPI, Starlatte, Falcon, Express, Rails, Springboot\end{tabular}}
+			\cvitem{Frontend Frameworks}{\begin{tabular}[t]{@{}l@{}}React, Vue, Angular, Astro, Bootstrap, Material\end{tabular}}
+			\cvitem{Databases}{\begin{tabular}[t]{@{}l@{}}PostgreSQL, MySQL, MongoDB, Oracle, SQLServer\end{tabular}}
+			\cvitem{DevOps/CI-CD}{\begin{tabular}[t]{@{}l@{}}Docker, Kubernetes, GitHub Actions, Jenkins, Terraform\end{tabular}}
+			\cvitem{Cloud}{\begin{tabular}[t]{@{}l@{}}AWS (Lambda, API Gateway, S3, DynamoDB, Step Functions, CodeBuild,\\Kinesis, CloudWatch, Xray), Tray.io\end{tabular}}
+			\cvitem{Tools}{\begin{tabular}[t]{@{}l@{}}Git, Figma, Postman, JIRA\end{tabular}}
+		}
+		
+		\colchunk{%
+			\section{Experience}
+			\raggedright
+			\cventry{2022}{\parbox[t]{\linewidth}{Fullstack Software\newline Developer}}{Team International}{}{}{}
+			\cventry{2020}{\parbox[t]{\linewidth}{Senior Software\newline Engineer}}{Blackboard}{}{}{}
+			\cventry{2018}{\parbox[t]{\linewidth}{Senior Software\newline Engineer}}{Alkanza}{}{}{}
+			\cventry{2016}{\parbox[t]{\linewidth}{Software Architect}}{Banking Technologies\newline Solutions S.A.S}{}{}{}
+			\cventry{2016}{\parbox[t]{\linewidth}{Oracle SOA Developer}}{Hardnetics LTDA}{}{}{}
+			\cventry{2015}{\parbox[t]{\linewidth}{Senior Consultant}}{Fussion Corporation SAS}{}{}{}
+			\cventry{2013}{\parbox[t]{\linewidth}{Consultant}}{Soaint SAS}{}{}{}
+		}
+		
+		\end{parcolumns}
+		
+		
+	% Projects
+	\section{ Relevant Projects}
+	\cvitem{Serverless LTI Integration}{Migrated LMS integration to serverless stack using AWS Cloud Services, including the deployment pipelines}
+	\cvitem{Monolith Split}{Designed and implemented the migration of a MVC monolith project into a Event Based Architecture Cloud System}
+	\cvitem{Python2 to Python3 Migration}{Upgraded internal tools and APIs to Python3.}
+	
+	
+	% Education
+	\section{Education}
+	\cventry{2017}{Master of IT Architectures}{Universidad de Los Andes}{Bogotá}{}{Master}
+	\cventry{2013}{Software Engineer}{Escuela Colombiana de Ingeniería}{Bogotá}{}{Bachelor}
+	
 \end{document}

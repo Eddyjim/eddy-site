@@ -1,20 +1,19 @@
 education:
-  - id: masters-cs
-    institution: University of Technology
-    degree: Master of Science
-    field: Computer Science
-    start_date: "2014-09"
-    end_date: "2016-05"
+  - id: masters-it-arch
+    institution: Universidad de Los Andes
+    degree: Master of IT Architectures
+    field: IT Architectures
+    start_date: "2015-01"
+    end_date: "2017-12"
     details:
-      - Specialized in distributed systems and cloud computing
-      - Thesis on scalable microservices architecture patterns
+      - Focus on enterprise and cloud architecture patterns
+      - Bogotá, Colombia
 
   - id: bachelors-se
-    institution: National University
-    degree: Bachelor of Engineering
+    institution: Escuela Colombiana de Ingeniería
+    degree: Software Engineer
     field: Software Engineering
-    start_date: "2010-09"
-    end_date: "2014-06"
+    start_date: "2008-01"
+    end_date: "2013-12"
     details:
-      - Dean's list honors
-      - Capstone project on real-time data visualization
+      - Bogotá, Colombia

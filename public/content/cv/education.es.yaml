@@ -1,20 +1,19 @@
 education:
-  - id: masters-cs
-    institution: Universidad de Tecnología
-    degree: Maestría en Ciencias
-    field: Ciencias de la Computación
-    start_date: "2014-09"
-    end_date: "2016-05"
+  - id: masters-it-arch
+    institution: Universidad de Los Andes
+    degree: Maestría en Arquitecturas de TI
+    field: Arquitecturas de TI
+    start_date: "2015-01"
+    end_date: "2017-12"
     details:
-      - Especialización en sistemas distribuidos y computación en la nube
-      - Tesis sobre patrones de arquitectura de microservicios escalables
+      - Enfoque en patrones de arquitectura empresarial y cloud
+      - Bogotá, Colombia
 
   - id: bachelors-se
-    institution: Universidad Nacional
-    degree: Ingeniería
+    institution: Escuela Colombiana de Ingeniería
+    degree: Ingeniero de Sistemas
     field: Ingeniería de Software
-    start_date: "2010-09"
-    end_date: "2014-06"
+    start_date: "2008-01"
+    end_date: "2013-12"
     details:
-      - Honores en la lista del decano
-      - Proyecto final sobre visualización de datos en tiempo real
+      - Bogotá, Colombia

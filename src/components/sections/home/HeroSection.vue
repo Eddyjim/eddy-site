@@ -28,7 +28,7 @@ const { t } = useI18n()
     </div>
     <div class="container text-center position-relative py-5">
       <p class="hero-greeting text-uppercase fw-semibold letter-spacing-wide mb-3">
-        👋
+        {{ t('hero.greeting') }} <span aria-hidden="true">👋</span>
       </p>
       <h1 class="display-2 fw-bold text-gradient mb-3">{{ name }}</h1>
       <p class="fs-4 fw-medium text-body-secondary mb-2">{{ title }}</p>
@@ -72,7 +72,7 @@ const { t } = useI18n()
 .hero-blob-1 {
   width: 500px;
   height: 500px;
-  background: #6366f1;
+  background: var(--color-primary);
   top: -10%;
   right: -5%;
   animation: float 8s ease-in-out infinite;
@@ -81,7 +81,7 @@ const { t } = useI18n()
 .hero-blob-2 {
   width: 400px;
   height: 400px;
-  background: #06b6d4;
+  background: var(--color-secondary);
   bottom: -10%;
   left: -5%;
   animation: float 10s ease-in-out infinite reverse;
@@ -128,5 +128,13 @@ const { t } = useI18n()
 
 .btn-hero:active {
   transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-blob,
+  .hero-blob-1,
+  .hero-blob-2 {
+    animation: none;
+  }
 }
 </style>

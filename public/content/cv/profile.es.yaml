@@ -1,15 +1,17 @@
 profile:
-  name: Edward Jimenez
-  title: Ingeniero de Software Senior y Consultor
-  tagline: Construyendo soluciones escalables y potenciando equipos a través de consultoría experta
+  name: Edward Jiménez M.
+  title: Ingeniero de Software
+  tagline: Changing the world from source code
   summary: >-
-    Ingeniero de software y consultor con experiencia, apasionado por construir aplicaciones
-    robustas y escalables. Especializado en desarrollo full-stack, arquitectura cloud
-    y liderazgo técnico. Ayudo a las empresas a convertir requisitos complejos en soluciones
-    elegantes y mantenibles.
+    Desarrollador de software con más de 10 años de experiencia construyendo
+    sistemas escalables basados en la web y en la nube. Competente en desarrollo
+    full-stack, prácticas DevOps e infraestructura en la nube. Apasionado por el
+    clean-code, patrones de diseño y la mentoría de equipos de desarrollo.
   contact:
-    email: eddyjim@eddyjim.com
+    email: eddy@eddyjim.com
+    phone: "+57 (301) 773 5242"
     linkedin: https://linkedin.com/in/eddyjim
-    github: https://github.com/Eddyjim
-    website: https://eddyjim.com
+    github: https://github.com/eddyjim
+    website: https://www.eddyjim.com
+    location: "Bogotá, Colombia"
   pdf_path: /content/cv/cv.es.pdf

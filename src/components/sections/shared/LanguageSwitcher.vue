@@ -12,9 +12,10 @@ function toggleLanguage() {
   <button
     class="btn btn-link nav-link p-1 fw-bold"
     :aria-label="t('language.switch')"
+    :title="locale === 'en' ? 'Cambiar a Espa\u00f1ol' : 'Switch to English'"
     @click="toggleLanguage"
   >
-    {{ locale.toUpperCase() }}
+    <i class="bi bi-globe2 me-1" aria-hidden="true"></i>{{ locale.toUpperCase() }}
   </button>
 </template>
 
@@ -22,8 +23,13 @@ function toggleLanguage() {
 button {
   font-size: 0.9rem;
   color: var(--color-text);
-  border: none;
-  min-width: 2rem;
+  min-width: 44px;
+  min-height: 44px;
   text-align: center;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 </style>

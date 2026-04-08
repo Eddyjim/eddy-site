@@ -117,21 +117,19 @@ const formatEndDate = (dateStr) => {
   transform: rotate(-180deg);
 }
 
-.slide-enter-active,
-.slide-leave-active {
-  transition: all 0.25s ease;
-  overflow: hidden;
+/* Slide transition for expand/collapse (GPU-accelerated) */
+.slide-enter-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
-
-.slide-enter-from,
+.slide-leave-active {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+.slide-enter-from {
+  opacity: 0;
+  transform: translateY(-8px);
+}
 .slide-leave-to {
   opacity: 0;
-  max-height: 0;
-}
-
-.slide-enter-to,
-.slide-leave-from {
-  opacity: 1;
-  max-height: 300px;
+  transform: translateY(-4px);
 }
 </style>

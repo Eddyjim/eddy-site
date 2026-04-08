@@ -92,8 +92,3 @@ const featuredProjects = computed(() => {
 })
 </script>
 
-<style scoped>
-.text-primary {
-  color: #0891b2 !important;
-}
-</style>

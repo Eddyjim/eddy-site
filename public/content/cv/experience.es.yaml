@@ -1,69 +1,152 @@
 experience:
-  - id: freelance-consultant
-    company: Consultor Independiente
-    role: Consultor de Software Senior
-    type: freelance
+  - id: team-international
+    company: Team International
+    role: Desarrollador Fullstack de Software
+    type: fulltime
     location: Remoto
     start_date: "2022-01"
     end_date: presente
-    summary: Proporcionando desarrollo full-stack y consultoría de arquitectura para múltiples clientes en diferentes industrias.
+    summary: Desarrollo full-stack construyendo sistemas escalables web y en la nube para clientes internacionales.
     responsibilities:
-      - Diseño e implementación de aplicaciones web escalables
-      - Revisiones de arquitectura y evaluaciones técnicas
-      - Mentoría a equipos de desarrollo en mejores prácticas
-      - Liderazgo de proyectos de migración a arquitecturas cloud-native
+      - Desarrollo y mantenimiento de aplicaciones web full-stack
+      - Diseño de arquitecturas cloud-native en AWS
+      - Implementación de pipelines CI/CD y mejores prácticas DevOps
+      - Colaboración con equipos distribuidos en diferentes zonas horarias
     achievements:
-      - Reducción de costos de infraestructura del cliente en un 40% mediante optimización cloud
-      - Entrega de más de 5 aplicaciones en producción a tiempo y dentro del presupuesto
+      - Entrega de múltiples aplicaciones en producción a tiempo
+      - Mejora en la confiabilidad de despliegues mediante pipelines automatizados
     technologies:
-      - Vue.js
-      - Node.js
+      - Python
+      - JavaScript
+      - TypeScript
+      - Vue
+      - React
       - AWS
       - Docker
-      - PostgreSQL
 
-  - id: acme-senior-dev
-    company: Acme Corp
+  - id: blackboard
+    company: Blackboard
     role: Ingeniero de Software Senior
     type: fulltime
-    location: Nueva York, NY
-    start_date: "2019-03"
+    location: Remoto
+    start_date: "2020-01"
     end_date: "2021-12"
-    summary: Lideró el desarrollo de aplicaciones orientadas al cliente y herramientas internas para una empresa SaaS mediana.
+    summary: Ingeniero senior trabajando en funcionalidades de plataforma LMS e integraciones serverless en empresa líder de EdTech.
     responsibilities:
-      - Lideró un equipo de 5 ingenieros construyendo la plataforma principal del producto
-      - Diseñó APIs RESTful y arquitectura de microservicios
-      - Implementó pipelines de CI/CD y pruebas automatizadas
-      - Colaboró con equipos de producto y diseño en la entrega de funcionalidades
+      - Diseño e implementación de integraciones LTI serverless usando AWS
+      - Construcción y mantenimiento de APIs y microservicios
+      - Migración de sistemas legados a arquitecturas cloud-native
+      - Mentoría a ingenieros junior y revisiones de código
     achievements:
-      - Mejoró el rendimiento de la aplicación en un 60% mediante optimización de código
-      - Redujo el tiempo de despliegue de 2 horas a 15 minutos
+      - Migración de integración LMS a stack serverless usando servicios en la nube de AWS
+      - Construcción de pipelines de despliegue para infraestructura serverless
     technologies:
-      - React
+      - Python
+      - AWS Lambda
+      - API Gateway
+      - DynamoDB
+      - Step Functions
+      - Docker
+
+  - id: alkanza
+    company: Alkanza
+    role: Ingeniero de Software Senior
+    type: fulltime
+    location: "Bogotá, Colombia"
+    start_date: "2018-01"
+    end_date: "2019-12"
+    summary: Ingeniero senior liderando la migración de arquitectura monolítica a basada en eventos en la nube para plataforma fintech.
+    responsibilities:
+      - Diseño de arquitectura basada en eventos para migración cloud
+      - División de monolito MVC en microservicios
+      - Implementación de API gateways y colas de mensajes
+      - Liderazgo de sesiones de diseño técnico y revisiones de arquitectura
+    achievements:
+      - Diseño e implementación de migración de monolito MVC a arquitectura cloud basada en eventos
+      - Actualización de herramientas internas y APIs de Python 2 a Python 3
+    technologies:
+      - Python
+      - Java
+      - AWS
+      - Docker
+      - Kubernetes
+      - PostgreSQL
+
+  - id: banking-technologies
+    company: Banking Technologies Solutions S.A.S
+    role: Arquitecto de Software
+    type: fulltime
+    location: "Bogotá, Colombia"
+    start_date: "2016-06"
+    end_date: "2017-12"
+    summary: Diseño de arquitecturas de software para soluciones de tecnología bancaria y financiera.
+    responsibilities:
+      - Definición de arquitectura de software para sistemas bancarios empresariales
+      - Evaluación de stacks tecnológicos y decisiones de construir vs comprar
+      - Creación de documentación técnica y diagramas de arquitectura
+      - Aseguramiento del cumplimiento con estándares de la industria financiera
+    achievements:
+      - Establecimiento de patrones arquitectónicos adoptados en múltiples proyectos
+    technologies:
       - Java
       - Spring Boot
-      - AWS
-      - Kubernetes
+      - Oracle
+      - SQL Server
 
-  - id: startup-fullstack
-    company: TechStart Inc
-    role: Desarrollador Full-Stack
+  - id: hardnetics
+    company: Hardnetics LTDA
+    role: Desarrollador Oracle SOA
     type: fulltime
-    location: San Francisco, CA
-    start_date: "2016-06"
-    end_date: "2019-02"
-    summary: Construyó y mantuvo aplicaciones web en un entorno de startup de ritmo rápido.
+    location: "Bogotá, Colombia"
+    start_date: "2016-01"
+    end_date: "2016-05"
+    summary: Desarrollo de soluciones de integración basadas en Oracle SOA para clientes empresariales.
     responsibilities:
-      - Desarrollo de funcionalidades en todo el stack usando JavaScript y Python
-      - Construcción de interfaces responsivas con Vue.js y React
-      - Gestión de diseño y optimización de bases de datos
-      - Participación en ceremonias ágiles y planificación de sprints
+      - Desarrollo de integraciones empresariales basadas en SOA
+      - Construcción y mantenimiento de servicios middleware Oracle
+      - Integración de sistemas dispares usando servicios web y mensajería
     achievements:
-      - Construyó el primer dashboard en tiempo real de la empresa usado por más de 10,000 usuarios
-      - Implementó pruebas automatizadas reduciendo reportes de bugs en un 50%
+      - Entrega de soluciones de integración empresarial en plazo
     technologies:
-      - Vue.js
-      - Python
-      - Node.js
-      - MongoDB
-      - Docker
+      - Java
+      - Oracle
+      - SOA
+
+  - id: fussion-corporation
+    company: Fussion Corporation SAS
+    role: Consultor Senior
+    type: contract
+    location: "Bogotá, Colombia"
+    start_date: "2015-01"
+    end_date: "2015-12"
+    summary: Consultor senior de tecnología proporcionando orientación en desarrollo de software y arquitectura a clientes empresariales.
+    responsibilities:
+      - Consultoría en arquitectura de software y decisiones tecnológicas
+      - Desarrollo de aplicaciones empresariales personalizadas
+      - Realización de evaluaciones técnicas y revisiones de código
+    achievements:
+      - Entrega de compromisos de consultoría para múltiples clientes empresariales
+    technologies:
+      - Java
+      - JavaScript
+      - Oracle
+      - SQL Server
+
+  - id: soaint
+    company: Soaint SAS
+    role: Consultor
+    type: contract
+    location: "Bogotá, Colombia"
+    start_date: "2013-01"
+    end_date: "2014-12"
+    summary: Consultor tecnológico trabajando en proyectos de desarrollo de software empresarial.
+    responsibilities:
+      - Desarrollo de aplicaciones empresariales para organizaciones cliente
+      - Participación en levantamiento de requisitos y diseño técnico
+      - Soporte a sistemas en producción y resolución de incidentes
+    achievements:
+      - Entrega exitosa de múltiples proyectos de clientes
+    technologies:
+      - Java
+      - JavaScript
+      - Oracle
