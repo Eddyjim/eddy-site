@@ -41,6 +41,18 @@
     "es": "Español",
     "switch": "Switch language"
   },
+  "contact": {
+    "heading": "Let's build something together",
+    "subtitle": "Have a project in mind or looking for a technical partner? I'd love to hear from you.",
+    "email": "Email",
+    "location": "Location",
+    "timezone": "Timezone",
+    "timezoneValue": "COT (UTC-5)",
+    "availability": "Available for new projects",
+    "connectHeading": "Connect",
+    "sendEmail": "Send me an email",
+    "hireMe": "Check out my CV"
+  },
   "errors": {
     "contentLoadFailed": "Content could not be loaded. Please refresh the page.",
     "pdfUnavailable": "PDF is currently unavailable."
