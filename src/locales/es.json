@@ -41,6 +41,18 @@
     "es": "Español",
     "switch": "Cambiar idioma"
   },
+  "contact": {
+    "heading": "Construyamos algo juntos",
+    "subtitle": "¿Tienes un proyecto en mente o buscas un socio técnico? Me encantaría saber de ti.",
+    "email": "Correo",
+    "location": "Ubicación",
+    "timezone": "Zona horaria",
+    "timezoneValue": "COT (UTC-5)",
+    "availability": "Disponible para nuevos proyectos",
+    "connectHeading": "Conecta",
+    "sendEmail": "Envíame un correo",
+    "hireMe": "Mira mi CV"
+  },
   "errors": {
     "contentLoadFailed": "No se pudo cargar el contenido. Por favor, actualice la página.",
     "pdfUnavailable": "El PDF no está disponible actualmente."
