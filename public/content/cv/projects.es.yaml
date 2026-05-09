@@ -1,4 +1,18 @@
 projects:
+  - id: policy-ai-agent
+    title: Agente de IA para Pólizas
+    description: >-
+      Construí un agente de IA sobre la plataforma SaaS BriteCore que
+      produce vistas resumidas de pólizas de seguros, reduciendo el tiempo
+      que los usuarios finales dedican a consultas manuales.
+    technologies:
+      - Python
+      - LLM
+      - AWS
+      - FastAPI
+    url: ""
+    featured: true
+
   - id: serverless-lti-integration
     title: Integración LTI Serverless
     description: >-
@@ -17,26 +31,15 @@ projects:
   - id: monolith-split
     title: División de Monolito
     description: >-
-      Diseño e implementación de la migración de un proyecto monolítico MVC
-      hacia una arquitectura en la nube basada en eventos, mejorando la
-      escalabilidad y mantenibilidad.
+      Construí la prueba de concepto que validó la migración de un monolito
+      MVC hacia una arquitectura en la nube basada en eventos, y luego me
+      sumé al equipo de implementación para el despliegue más amplio que
+      mejoró la escalabilidad y la mantenibilidad.
     technologies:
       - Python
       - AWS
       - Docker
       - Kubernetes
       - PostgreSQL
-    url: ""
-    featured: true
-
-  - id: python2-to-python3-migration
-    title: Migración de Python 2 a Python 3
-    description: >-
-      Actualización de herramientas internas y APIs de Python 2 a Python 3,
-      asegurando compatibilidad y aprovechando características modernas del lenguaje.
-    technologies:
-      - Python
-      - Flask
-      - FastAPI
     url: ""
     featured: true

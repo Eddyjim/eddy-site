@@ -1,12 +1,27 @@
 profile:
   name: Edward Jiménez M.
-  title: Ingeniero de Software
-  tagline: Changing the world from source code
+  title: Ingeniero de Software Senior · Cloud y Backend
+  tagline: Sistemas cloud-native, de principio a fin.
   summary: >-
-    Desarrollador de software con más de 10 años de experiencia construyendo
-    sistemas escalables basados en la web y en la nube. Competente en desarrollo
-    full-stack, prácticas DevOps e infraestructura en la nube. Apasionado por el
-    clean-code, patrones de diseño y la mentoría de equipos de desarrollo.
+    Ingeniero de software senior con más de 10 años construyendo sistemas
+    cloud-native sobre AWS. Actualmente embebido en BriteCore (SaaS de
+    seguros), desarrollando servicios basados en eventos, un motor de
+    facturación con máquina de estados y un agente de IA que resume
+    información de pólizas. Antes: construí la PoC que dio inicio a la
+    migración monolito-a-microservicios en Alkanza, y desarrollé
+    integraciones LTI serverless en Blackboard con Lambda, API Gateway y
+    Step Functions. Sólido en Python y full-stack con Vue/React.
+  available: true
+  availability_note: Disponible para nuevos roles senior · Remoto
+  work_mode: Remoto (Américas / Europa)
+  timezone: COT (UTC-5)
+  languages:
+    - code: en
+      label: English
+      level: Profesional
+    - code: es
+      label: Español
+      level: Nativo
   contact:
     email: eddy@eddyjim.com
     phone: "+57 (301) 773 5242"

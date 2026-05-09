@@ -12,6 +12,9 @@ new InfraStack(app, 'EddySiteStack', {
   },
   githubRepo: 'Eddyjim/eddy-site',
   bucketName: 'eddysite',
-  importExistingBucket: true, // Bucket already exists — reference it, don't create
-  enableCloudFront: false, // Set to true when ready for CDN
+  importExistingBucket: true,
+  enableCloudFront: true,
+  domainName: 'eddyjim.com',
+  certificateArn: 'arn:aws:acm:us-east-1:030125065667:certificate/9e42a475-91e7-4743-a9cf-e091609b0019',
+  hostedZoneId: 'Z06096592PLH2V2D0UZJ8',
 });
