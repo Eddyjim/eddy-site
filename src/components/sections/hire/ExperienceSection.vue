@@ -3,28 +3,15 @@
     <div class="container">
       <h2 class="section-heading">{{ t('sections.experience') }}</h2>
 
-      <FilterBar
-        :categories="filterCategories"
-        v-model="activeFilters"
-      />
-
       <div class="experience-list">
-        <div
-          v-for="entry in filteredEntries"
+        <article
+          v-for="entry in entries"
           :key="entry.id"
           class="fresh-card mb-3 experience-card"
+          :class="{ 'experience-card-current': entry.end_date === 'present' }"
         >
-          <div
-            class="card-header-area d-flex justify-content-between align-items-start cursor-pointer p-3"
-            role="button"
-            tabindex="0"
-            :aria-expanded="isExpanded(entry.id)"
-            :aria-controls="'experience-' + entry.id"
-            @click="toggleExpand(entry.id)"
-            @keydown.enter.prevent="toggleExpand(entry.id)"
-            @keydown.space.prevent="toggleExpand(entry.id)"
-          >
-            <div class="flex-grow-1">
+          <div class="p-3">
+            <header class="experience-header">
               <div class="d-flex align-items-center flex-wrap gap-2 mb-1">
                 <h3 class="h5 mb-0 fw-semibold">{{ entry.role }}</h3>
                 <span
@@ -41,79 +28,79 @@
               </p>
               <p class="mb-1 small text-body-tertiary">
                 {{ formatDate(entry.start_date) }} &ndash; {{ formatEndDate(entry.end_date) }}
+                <span class="tenure-divider mx-1">&middot;</span>
+                <span class="tenure-text">{{ tenureLabel(entry.start_date, entry.end_date) }}</span>
               </p>
               <p class="mb-0 mt-2">{{ entry.summary }}</p>
+            </header>
+
+            <div v-if="entry.achievements?.length" class="mt-3">
+              <h4 class="h6 fw-semibold achievements-heading mb-2">
+                <i class="bi bi-trophy me-1" aria-hidden="true"></i>
+                {{ t('labels.achievements') }}
+              </h4>
+              <ul class="mb-0">
+                <li v-for="(item, index) in entry.achievements" :key="index">
+                  {{ item }}
+                </li>
+              </ul>
             </div>
-            <i
-              class="bi bi-chevron-down fs-5 ms-3 mt-1 text-body-secondary chevron-icon"
-              :class="{ 'chevron-expanded': isExpanded(entry.id) }"
-              aria-hidden="true"
-            ></i>
-          </div>
 
-          <Transition name="slide">
-            <div
-              v-if="isExpanded(entry.id)"
-              :id="'experience-' + entry.id"
-              class="card-body-area px-3 pb-3 pt-0"
-            >
-              <hr class="my-3">
-
-              <!-- Responsibilities -->
-              <div v-if="entry.responsibilities?.length" class="mb-3">
-                <h4 class="h6 fw-semibold">{{ t('labels.responsibilities') }}</h4>
-                <ul class="mb-0">
-                  <li v-for="(item, index) in entry.responsibilities" :key="index">
-                    {{ item }}
-                  </li>
-                </ul>
+            <div v-if="entry.technologies?.length" class="mt-3">
+              <div class="d-flex flex-wrap gap-2">
+                <span
+                  v-for="tech in entry.technologies"
+                  :key="tech"
+                  class="badge rounded-pill tech-badge"
+                >
+                  {{ tech }}
+                </span>
               </div>
+            </div>
 
-              <!-- Achievements -->
-              <div v-if="entry.achievements?.length" class="mb-3">
-                <h4 class="h6 fw-semibold achievements-heading">
-                  <i class="bi bi-trophy me-1" aria-hidden="true"></i>
-                  {{ t('labels.achievements') }}
-                </h4>
-                <ul class="mb-0">
-                  <li v-for="(item, index) in entry.achievements" :key="index">
-                    {{ item }}
-                  </li>
-                </ul>
-              </div>
+            <div v-if="entry.responsibilities?.length" class="mt-3">
+              <button
+                type="button"
+                class="responsibilities-toggle"
+                :aria-expanded="isExpanded(entry.id)"
+                :aria-controls="'responsibilities-' + entry.id"
+                @click="toggleExpand(entry.id)"
+              >
+                <span>{{ t('labels.responsibilities') }}</span>
+                <i
+                  class="bi bi-chevron-down ms-1 chevron-icon"
+                  :class="{ 'chevron-expanded': isExpanded(entry.id) }"
+                  aria-hidden="true"
+                ></i>
+              </button>
 
-              <!-- Technologies -->
-              <div v-if="entry.technologies?.length">
-                <h4 class="h6 fw-semibold">{{ t('labels.technologies') }}</h4>
-                <div class="d-flex flex-wrap gap-2">
-                  <span
-                    v-for="tech in entry.technologies"
-                    :key="tech"
-                    class="badge rounded-pill tech-badge"
-                  >
-                    {{ tech }}
-                  </span>
+              <Transition name="slide">
+                <div
+                  v-if="isExpanded(entry.id)"
+                  :id="'responsibilities-' + entry.id"
+                  class="mt-2"
+                >
+                  <ul class="mb-0">
+                    <li v-for="(item, index) in entry.responsibilities" :key="index">
+                      {{ item }}
+                    </li>
+                  </ul>
                 </div>
-              </div>
+              </Transition>
             </div>
-          </Transition>
-        </div>
+          </div>
+        </article>
       </div>
-
-      <p v-if="filteredEntries.length === 0" class="text-body-secondary text-center py-3">
-        {{ t('filters.noResults') }}
-      </p>
     </div>
   </section>
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocale } from '@/composables/useLocale'
-import FilterBar from './FilterBar.vue'
 
-const props = defineProps({
+defineProps({
   entries: {
     type: Array,
     required: true,
@@ -125,32 +112,6 @@ const { t } = useI18n()
 const { locale } = useLocale()
 
 const expandedIds = ref([])
-const activeFilters = ref([])
-
-/**
- * Extract unique role types from entries and map to locale-aware labels.
- * The raw type value is used internally; the label is for display.
- */
-const filterCategories = computed(() => {
-  const types = [...new Set(props.entries.map((e) => e.type))]
-  return types.map((type) => t('filters.' + type))
-})
-
-/**
- * Map a display label back to its raw type value for filtering.
- */
-const typeFromLabel = (label) => {
-  const types = [...new Set(props.entries.map((e) => e.type))]
-  return types.find((type) => t('filters.' + type) === label) || null
-}
-
-const filteredEntries = computed(() => {
-  if (activeFilters.value.length === 0) {
-    return props.entries
-  }
-  const activeTypes = activeFilters.value.map(typeFromLabel).filter(Boolean)
-  return props.entries.filter((entry) => activeTypes.includes(entry.type))
-})
 
 const isExpanded = (id) => expandedIds.value.includes(id)
 
@@ -163,9 +124,6 @@ const toggleExpand = (id) => {
   }
 }
 
-/**
- * Format "YYYY-MM" date string to a locale-aware short format (e.g., "Jan 2022").
- */
 const formatDate = (dateStr) => {
   const date = new Date(dateStr + '-01')
   return date.toLocaleDateString(locale.value, { month: 'short', year: 'numeric' })
@@ -177,20 +135,35 @@ const formatEndDate = (dateStr) => {
   }
   return formatDate(dateStr)
 }
+
+const tenureLabel = (startStr, endStr) => {
+  const start = new Date(startStr + '-01')
+  const end = endStr === 'present' ? new Date() : new Date(endStr + '-01')
+  let totalMonths = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth())
+  if (totalMonths < 1) totalMonths = 1
+  const years = Math.floor(totalMonths / 12)
+  const months = totalMonths % 12
+  if (years === 0) return `${months}m`
+  if (months === 0) return `${years}y`
+  return `${years}y ${months}m`
+}
 </script>
 
 <style scoped>
-.cursor-pointer {
-  cursor: pointer;
+.experience-card {
+  position: relative;
+  transition: box-shadow 0.2s ease;
 }
 
-.card-header-area {
-  transition: background-color 0.2s ease;
-  border-radius: 0.75rem;
-}
-
-.card-header-area:hover {
-  background-color: rgba(99, 102, 241, 0.04);
+.experience-card-current::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  border-radius: 0.75rem 0.75rem 0 0;
 }
 
 .badge-present {
@@ -200,8 +173,41 @@ const formatEndDate = (dateStr) => {
   font-size: 0.75rem;
 }
 
+.tenure-divider {
+  opacity: 0.6;
+}
+
+.tenure-text {
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
 .achievements-heading {
   color: var(--color-primary);
+}
+
+.responsibilities-toggle {
+  background: none;
+  border: none;
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-secondary, var(--color-text));
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.responsibilities-toggle:hover,
+.responsibilities-toggle:focus-visible {
+  color: var(--color-primary);
+}
+
+.responsibilities-toggle:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
 }
 
 .chevron-icon {
@@ -212,7 +218,6 @@ const formatEndDate = (dateStr) => {
   transform: rotate(-180deg);
 }
 
-/* Slide transition for expand/collapse (GPU-accelerated) */
 .slide-enter-active {
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
@@ -226,5 +231,16 @@ const formatEndDate = (dateStr) => {
 .slide-leave-to {
   opacity: 0;
   transform: translateY(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chevron-icon,
+  .responsibilities-toggle {
+    transition: none;
+  }
+  .slide-enter-active,
+  .slide-leave-active {
+    transition: none;
+  }
 }
 </style>

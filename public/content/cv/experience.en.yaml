@@ -1,20 +1,25 @@
 experience:
   - id: team-international
-    company: Team International
+    company: Team International — BriteCore (staff augmentation)
     role: Fullstack Software Developer
     type: fulltime
     location: Remote
     start_date: "2022-01"
     end_date: present
-    summary: Full-stack development building scalable web and cloud-based systems for international clients.
+    summary: >-
+      Staff augmentation engineer embedded with BriteCore, a SaaS platform for
+      insurance policy management. Full-stack feature work and cloud-native
+      services on AWS as part of a US-based product team.
     responsibilities:
-      - Developing and maintaining full-stack web applications
-      - Designing cloud-native architectures on AWS
+      - Developing and maintaining full-stack features across the BriteCore product
+      - Designing and operating cloud-native services on AWS
       - Implementing CI/CD pipelines and DevOps best practices
-      - Collaborating with distributed teams across time zones
+      - Collaborating with the BriteCore engineering team across time zones
     achievements:
-      - Delivered multiple production applications on time
-      - Improved deployment reliability through automated pipelines
+      - Built an AI agent that produces summarized views of insurance policies, reducing the time end users spend on manual policy lookups
+      - Co-built a new state-machine-driven billing engine for the policy billing lifecycle
+      - Built an event producer that fans BriteCore domain events to internal and external event engines, enabling near-real-time downstream consumers
+      - Refactored legacy services and shipped new APIs across the BriteCore platform; upgraded internal tools from Python 2 to Python 3
     technologies:
       - Python
       - JavaScript
@@ -55,15 +60,19 @@ experience:
     location: "Bogotá, Colombia"
     start_date: "2018-01"
     end_date: "2019-12"
-    summary: Senior engineer leading the migration from monolithic to event-driven cloud architecture for a fintech platform.
+    summary: >-
+      Senior engineer on a fintech platform's migration from MVC monolith to
+      event-driven cloud architecture. Built the initial proof-of-concept
+      that validated the new architecture, then joined the implementation
+      team for the broader rollout.
     responsibilities:
-      - Designing event-driven architecture for cloud migration
-      - Splitting MVC monolith into microservices
-      - Implementing API gateways and message queues
-      - Leading technical design sessions and architecture reviews
+      - Building a proof-of-concept to validate the event-driven cloud architecture
+      - Contributing to the migration from MVC monolith into microservices
+      - Implementing API gateway and message-queue integrations
+      - Participating in technical design sessions and architecture reviews
     achievements:
-      - Designed and implemented migration from MVC monolith to event-based cloud architecture
-      - Upgraded internal tools and APIs from Python 2 to Python 3
+      - Built the initial proof-of-concept that validated migrating to an event-driven cloud architecture
+      - Contributed to core services in the monolith-to-microservices rollout
     technologies:
       - Python
       - Java

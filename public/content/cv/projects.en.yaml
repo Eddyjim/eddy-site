@@ -1,4 +1,18 @@
 projects:
+  - id: policy-ai-agent
+    title: Insurance Policy AI Agent
+    description: >-
+      Built an AI agent on the BriteCore SaaS platform that produces
+      summarized views of insurance policies, reducing the time end users
+      spend on manual policy lookups.
+    technologies:
+      - Python
+      - LLM
+      - AWS
+      - FastAPI
+    url: ""
+    featured: true
+
   - id: serverless-lti-integration
     title: Serverless LTI Integration
     description: >-
@@ -17,8 +31,9 @@ projects:
   - id: monolith-split
     title: Monolith Split
     description: >-
-      Designed and implemented the migration of an MVC monolith project into
-      an event-based architecture cloud system, improving scalability and
+      Built the proof-of-concept that validated migrating an MVC monolith
+      into an event-based cloud architecture, then joined the implementation
+      team for the broader rollout that improved scalability and
       maintainability.
     technologies:
       - Python
@@ -26,17 +41,5 @@ projects:
       - Docker
       - Kubernetes
       - PostgreSQL
-    url: ""
-    featured: true
-
-  - id: python2-to-python3-migration
-    title: Python 2 to Python 3 Migration
-    description: >-
-      Upgraded internal tools and APIs from Python 2 to Python 3, ensuring
-      compatibility and leveraging modern language features.
-    technologies:
-      - Python
-      - Flask
-      - FastAPI
     url: ""
     featured: true

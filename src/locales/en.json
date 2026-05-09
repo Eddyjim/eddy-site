@@ -53,6 +53,11 @@
     "sendEmail": "Send me an email",
     "hireMe": "Check out my CV"
   },
+  "social": {
+    "linkedin": "LinkedIn profile",
+    "github": "GitHub profile",
+    "email": "Send email"
+  },
   "errors": {
     "contentLoadFailed": "Content could not be loaded. Please refresh the page.",
     "pdfUnavailable": "PDF is currently unavailable."
