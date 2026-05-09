@@ -1,12 +1,26 @@
 profile:
   name: Edward Jiménez M.
-  title: Software Engineer
-  tagline: Changing the world from source code
+  title: Senior Software Engineer · Cloud & Backend
+  tagline: Cloud-native systems, end-to-end.
   summary: >-
-    Experienced software developer with 10+ years of experience building scalable
-    web and cloud-based systems. Proficient in full-stack development, DevOps practices,
-    and cloud infrastructure. Passionate about clean code, architectural patterns,
-    and mentoring development teams.
+    Senior software engineer with 10+ years building cloud-native systems
+    on AWS. Currently embedded with BriteCore (insurance SaaS), shipping
+    event-driven services, a state-machine billing engine and an AI agent
+    that summarizes policy data. Earlier: built the PoC that seeded an
+    MVC monolith-to-microservices migration at Alkanza, and shipped
+    serverless LTI integrations at Blackboard using Lambda, API Gateway
+    and Step Functions. Strong in Python and full-stack with Vue/React.
+  available: true
+  availability_note: Available for new senior roles · Remote-first
+  work_mode: Remote (Americas / EU)
+  timezone: COT (UTC-5)
+  languages:
+    - code: en
+      label: English
+      level: Professional
+    - code: es
+      label: Español
+      level: Native
   contact:
     email: eddy@eddyjim.com
     phone: "+57 (301) 773 5242"

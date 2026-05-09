@@ -53,6 +53,11 @@
     "sendEmail": "Envíame un correo",
     "hireMe": "Mira mi CV"
   },
+  "social": {
+    "linkedin": "Perfil de LinkedIn",
+    "github": "Perfil de GitHub",
+    "email": "Enviar correo"
+  },
   "errors": {
     "contentLoadFailed": "No se pudo cargar el contenido. Por favor, actualice la página.",
     "pdfUnavailable": "El PDF no está disponible actualmente."

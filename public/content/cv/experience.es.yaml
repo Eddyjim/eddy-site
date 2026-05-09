@@ -1,20 +1,26 @@
 experience:
   - id: team-international
-    company: Team International
+    company: Team International — BriteCore (staff augmentation)
     role: Desarrollador Fullstack de Software
     type: fulltime
     location: Remoto
     start_date: "2022-01"
     end_date: presente
-    summary: Desarrollo full-stack construyendo sistemas escalables web y en la nube para clientes internacionales.
+    summary: >-
+      Ingeniero embebido como staff augmentation en BriteCore, una plataforma
+      SaaS para gestión de pólizas de seguros. Desarrollo full-stack y
+      servicios cloud-native sobre AWS como parte de un equipo de producto
+      basado en EE. UU.
     responsibilities:
-      - Desarrollo y mantenimiento de aplicaciones web full-stack
-      - Diseño de arquitecturas cloud-native en AWS
+      - Desarrollo y mantenimiento de funcionalidades full-stack en el producto BriteCore
+      - Diseño y operación de servicios cloud-native en AWS
       - Implementación de pipelines CI/CD y mejores prácticas DevOps
-      - Colaboración con equipos distribuidos en diferentes zonas horarias
+      - Colaboración con el equipo de ingeniería de BriteCore a través de zonas horarias
     achievements:
-      - Entrega de múltiples aplicaciones en producción a tiempo
-      - Mejora en la confiabilidad de despliegues mediante pipelines automatizados
+      - Construí un agente de IA que produce vistas resumidas de pólizas de seguros, reduciendo el tiempo que los usuarios finales dedican a consultas manuales
+      - Co-construí un nuevo motor de facturación basado en máquina de estados para el ciclo de vida de facturación de pólizas
+      - Construí un productor de eventos que distribuye eventos de dominio de BriteCore hacia motores internos y externos, habilitando consumidores en tiempo casi real
+      - Refactoricé servicios legados y desarrollé nuevas APIs en la plataforma BriteCore; actualicé herramientas internas de Python 2 a Python 3
     technologies:
       - Python
       - JavaScript
@@ -55,15 +61,19 @@ experience:
     location: "Bogotá, Colombia"
     start_date: "2018-01"
     end_date: "2019-12"
-    summary: Ingeniero senior liderando la migración de arquitectura monolítica a basada en eventos en la nube para plataforma fintech.
+    summary: >-
+      Ingeniero senior en la migración de una plataforma fintech de monolito
+      MVC a arquitectura cloud basada en eventos. Construí la prueba de
+      concepto inicial que validó la nueva arquitectura y luego me sumé al
+      equipo de implementación para el despliegue más amplio.
     responsibilities:
-      - Diseño de arquitectura basada en eventos para migración cloud
-      - División de monolito MVC en microservicios
-      - Implementación de API gateways y colas de mensajes
-      - Liderazgo de sesiones de diseño técnico y revisiones de arquitectura
+      - Construcción de una prueba de concepto para validar la arquitectura cloud basada en eventos
+      - Contribución a la migración de monolito MVC hacia microservicios
+      - Implementación de integraciones con API gateway y colas de mensajes
+      - Participación en sesiones de diseño técnico y revisiones de arquitectura
     achievements:
-      - Diseño e implementación de migración de monolito MVC a arquitectura cloud basada en eventos
-      - Actualización de herramientas internas y APIs de Python 2 a Python 3
+      - Construcción de la PoC inicial que validó la migración a una arquitectura cloud basada en eventos
+      - Contribución a servicios clave durante la implementación monolito-a-microservicios
     technologies:
       - Python
       - Java
