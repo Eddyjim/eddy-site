@@ -6,10 +6,10 @@ profile:
     Senior software engineer with 10+ years building cloud-native systems
     on AWS. Currently embedded with BriteCore (insurance SaaS), shipping
     event-driven services, a state-machine billing engine and an AI agent
-    that summarizes policy data. Earlier: built the PoC that seeded an
-    MVC monolith-to-microservices migration at Alkanza, and shipped
-    serverless LTI integrations at Blackboard using Lambda, API Gateway
-    and Step Functions. Strong in Python and full-stack with Vue/React.
+    that summarizes policy data. Earlier: led the design and implementation
+    of a serverless LTI service that decoupled the Blackboard LMS monolith,
+    and built the PoC seeding an MVC monolith-to-microservices migration at
+    Alkanza. Strong in Python and full-stack with Vue/React.
   available: true
   availability_note: Available for new senior roles · Remote-first
   work_mode: Remote (Americas / EU)
@@ -29,3 +29,8 @@ profile:
     website: https://www.eddyjim.com
     location: "Bogotá, Colombia"
   pdf_path: /content/cv/cv.en.pdf
+  cv_versions:
+    - id: short
+      path: /content/cv/cv.en.pdf
+    - id: detailed
+      path: /content/cv/cv.en.detailed.pdf

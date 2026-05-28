@@ -1,0 +1,124 @@
+\documentclass[11pt,letterpaper,sans]{moderncv}
+
+\moderncvstyle{classic}
+\moderncvcolor{green}
+
+\usepackage[margin=1.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+
+% Personal info
+\name{Edward}{Jiménez M.}
+\title{Senior Software Engineer · Cloud \& Backend}
+\address{Bogotá, Colombia}{}
+\email{eddy@eddyjim.com}
+\homepage{www.eddyjim.com}
+\social[linkedin]{eddyjim}
+\social[github]{eddyjim}
+\quote{Cloud-native systems, end-to-end.}
+
+\setlist[itemize]{leftmargin=*,itemsep=1pt,parsep=1pt,topsep=2pt}
+
+\begin{document}
+
+\makecvtitle
+
+% Summary
+	\section*{Summary}
+Senior software engineer with 10+ years building cloud-native systems on AWS. Currently at BriteCore (insurance SaaS) shipping event-driven services, a state-machine billing engine and an AI agent for policy summarization. Earlier: led the design and implementation of a serverless LTI service that decoupled the Blackboard LMS monolith, and built the PoC seeding an MVC monolith-to-microservices migration at Alkanza. Strong in Python and full-stack with Vue/React.
+
+% Tech Stack
+\section{Tech Stack}
+\cvitem{Languages}{Python, Java, JavaScript, TypeScript, Ruby, Bash}
+\cvitem{Backend}{Flask, FastAPI, Starlette, Falcon, Express, Rails, Spring Boot}
+\cvitem{Frontend}{React, Vue, Angular, Astro, Bootstrap, Material}
+\cvitem{Databases}{PostgreSQL, MySQL, MongoDB, Oracle, SQL Server}
+\cvitem{DevOps / CI-CD}{Docker, Kubernetes, GitHub Actions, Jenkins, Terraform}
+\cvitem{Cloud (AWS)}{Lambda, API Gateway, S3, DynamoDB, Step Functions, CodeBuild, Kinesis, CloudWatch / X-Ray, Tray.io}
+\cvitem{Tools}{Git, Postman, JIRA, Figma, Bizagi}
+
+% Experience
+\section{Experience}
+
+\cventry{Jun 2022 -- Present}{Fullstack Software Engineer}{Team International {\footnotesize\itshape (BriteCore --- staff augmentation)}}{Remote}{}{%
+\small Staff augmentation engineer embedded with BriteCore, a SaaS platform for insurance policy management. Fullstack engineer building new product features --- including AI agents --- and operating cloud-native services on AWS as part of a US-based product team.
+\begin{itemize}
+  \item Built an AI agent that produces summarized views of insurance policies, reducing the time end users spend on manual policy lookups
+  \item Co-built a new state-machine-driven billing engine for the policy billing lifecycle
+  \item Built an event producer that fans BriteCore domain events to internal and external event engines, enabling near-real-time downstream consumers
+  \item Refactored legacy services and shipped new APIs across the BriteCore platform; upgraded internal tools from Python 2 to Python 3
+\end{itemize}
+\textit{Tech:} Python, JavaScript, TypeScript, Vue, React, AWS, Docker
+}
+
+\cventry{Feb 2020 -- Jun 2022}{Technical Lead}{Blackboard}{Remote}{}{%
+\small Technical lead of the Development and Relations teams. Owned the design and implementation of a new LTI service that decoupled functionality from the legacy monolith inside the Blackboard LMS.
+\begin{itemize}
+  \item Designed and implemented a new serverless LTI service that decoupled functionality from the LMS monolith
+  \item Led the technical direction of the Development and Relations teams; ran design reviews and architectural decisions
+  \item Migrated the LMS integration to a serverless stack using AWS Lambda, API Gateway and Step Functions
+  \item Built deployment pipelines for the new serverless infrastructure
+  \item Mentored engineers and conducted code reviews
+\end{itemize}
+\textit{Tech:} Python, Java, Scala, JavaScript, Angular, React, AWS Lambda, API Gateway, DynamoDB, Step Functions, Docker
+}
+
+\cventry{Jan 2018 -- Dec 2019}{Senior Software Engineer}{Alkanza}{Bogotá, Colombia}{}{%
+\small Fullstack engineer on the research and development team. Built proofs-of-concept while contributing to the platform's monolith-split project --- migrating a fintech MVC monolith to event-driven cloud architecture.
+\begin{itemize}
+  \item Built the initial proof-of-concept that validated migrating to an event-driven cloud architecture
+  \item Prototyped new product capabilities as part of the R\&D team
+  \item Contributed to core services in the monolith-to-microservices rollout
+  \item Implemented API gateway and message-queue integrations
+  \item Participated in technical design sessions and architecture reviews
+\end{itemize}
+\textit{Tech:} Python, Java, AWS, Docker, Kubernetes, PostgreSQL
+}
+
+\cventry{Mar 2016 -- Oct 2017}{Software Architect}{Banking Technologies Solutions S.A.S}{Bogotá, Colombia}{}{%
+\small Software architect of a BPM implementation built on Bizagi. Owned the design of business processes and their integrations across enterprise banking systems.
+\begin{itemize}
+  \item Designed BPM processes in Bizagi for enterprise banking workflows
+  \item Defined integrations between the BPM platform and surrounding banking systems
+  \item Created technical documentation and architecture diagrams
+  \item Established architectural patterns adopted across multiple projects
+\end{itemize}
+\textit{Tech:} Bizagi, Java, Spring Boot, Oracle, SQL Server
+}
+
+\cventry{Nov 2015 -- Mar 2016}{Oracle EBS Solution Architect}{Hardnetics LTDA}{Bogotá, Colombia}{}{%
+\small Hired to define the architecture and technical design of an Oracle E-Business Suite (EBS) implementation for a telecommunications company.
+\begin{itemize}
+  \item Designed the architecture and technical approach for the Oracle EBS rollout
+  \item Defined integrations between the EBS modules and the client's surrounding systems
+  \item Produced architecture documentation and design decision records
+\end{itemize}
+\textit{Tech:} Oracle EBS, Java, Oracle, SOA
+}
+
+\cventry{Mar 2015 -- Nov 2015}{Senior Consultant}{Fussion Corporation SAS}{Bogotá, Colombia}{}{%
+\small Senior consultant leading a content management (ECM) implementation and its integration with the client's ERP system.
+\begin{itemize}
+  \item Led the technical implementation of the ECM platform
+  \item Designed and built the ERP-to-ECM integration
+  \item Coordinated cross-system data flows and consistency rules
+\end{itemize}
+\textit{Tech:} Java, JavaScript, Oracle, SQL Server
+}
+
+\cventry{Jan 2013 -- Mar 2015}{Functional / Technical Consultant}{Soaint SAS}{Bogotá, Colombia}{}{%
+\small Functional and technical consultant on government projects and engagements across multiple economic sectors.
+\begin{itemize}
+  \item Delivered functional analysis and technical implementation across client engagements
+  \item Worked on government-sector projects and private clients in diverse industries
+  \item Participated in requirements gathering and technical design
+\end{itemize}
+\textit{Tech:} Java, JavaScript, Oracle
+}
+
+% Education
+\section{Education}
+\cventry{2015 -- 2017}{Master of IT Architectures}{Universidad de Los Andes}{Bogotá, Colombia}{}{Focus on enterprise and cloud architecture patterns}
+\cventry{2008 -- 2013}{Software Engineer}{Escuela Colombiana de Ingeniería}{Bogotá, Colombia}{}{}
+
+\end{document}

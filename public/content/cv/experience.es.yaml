@@ -1,18 +1,19 @@
 experience:
   - id: team-international
     company: Team International — BriteCore (staff augmentation)
-    role: Desarrollador Fullstack de Software
+    role: Ingeniero de Software Fullstack
     type: fulltime
     location: Remoto
-    start_date: "2022-01"
+    start_date: "2022-06"
     end_date: presente
     summary: >-
       Ingeniero embebido como staff augmentation en BriteCore, una plataforma
-      SaaS para gestión de pólizas de seguros. Desarrollo full-stack y
-      servicios cloud-native sobre AWS como parte de un equipo de producto
-      basado en EE. UU.
+      SaaS para gestión de pólizas de seguros. Ingeniero fullstack
+      construyendo nuevas funcionalidades del producto — incluyendo agentes
+      de IA — y operando servicios cloud-native en AWS como parte de un
+      equipo de producto basado en EE. UU.
     responsibilities:
-      - Desarrollo y mantenimiento de funcionalidades full-stack en el producto BriteCore
+      - Desarrollo de funcionalidades full-stack en el producto BriteCore
       - Diseño y operación de servicios cloud-native en AWS
       - Implementación de pipelines CI/CD y mejores prácticas DevOps
       - Colaboración con el equipo de ingeniería de BriteCore a través de zonas horarias
@@ -32,22 +33,31 @@ experience:
 
   - id: blackboard
     company: Blackboard
-    role: Ingeniero de Software Senior
+    role: Líder Técnico
     type: fulltime
     location: Remoto
-    start_date: "2020-01"
-    end_date: "2021-12"
-    summary: Ingeniero senior trabajando en funcionalidades de plataforma LMS e integraciones serverless en empresa líder de EdTech.
+    start_date: "2020-02"
+    end_date: "2022-06"
+    summary: >-
+      Líder técnico de los equipos de Development y Relations. Lideré el
+      diseño e implementación de un nuevo servicio LTI que desacopló
+      funcionalidad del monolito legado dentro del LMS de Blackboard.
     responsibilities:
-      - Diseño e implementación de integraciones LTI serverless usando AWS
-      - Construcción y mantenimiento de APIs y microservicios
-      - Migración de sistemas legados a arquitecturas cloud-native
-      - Mentoría a ingenieros junior y revisiones de código
+      - Liderar la dirección técnica de los equipos de Development y Relations
+      - Diseño de integraciones LTI serverless usando AWS
+      - Conducción de revisiones de diseño y decisiones arquitectónicas
+      - Mentoría a ingenieros y revisiones de código
     achievements:
+      - Diseñé e implementé un nuevo servicio LTI serverless que desacopló funcionalidad del monolito del LMS
       - Migración de integración LMS a stack serverless usando servicios en la nube de AWS
-      - Construcción de pipelines de despliegue para infraestructura serverless
+      - Construcción de pipelines de despliegue para la nueva infraestructura serverless
     technologies:
       - Python
+      - Java
+      - Scala
+      - JavaScript
+      - Angular
+      - React
       - AWS Lambda
       - API Gateway
       - DynamoDB
@@ -62,12 +72,13 @@ experience:
     start_date: "2018-01"
     end_date: "2019-12"
     summary: >-
-      Ingeniero senior en la migración de una plataforma fintech de monolito
-      MVC a arquitectura cloud basada en eventos. Construí la prueba de
-      concepto inicial que validó la nueva arquitectura y luego me sumé al
-      equipo de implementación para el despliegue más amplio.
+      Ingeniero fullstack en el equipo de investigación y desarrollo.
+      Construí pruebas de concepto mientras contribuía al proyecto de
+      división del monolito — migrando un monolito MVC fintech a una
+      arquitectura cloud basada en eventos.
     responsibilities:
-      - Construcción de una prueba de concepto para validar la arquitectura cloud basada en eventos
+      - Prototipado de nuevas capacidades de producto como parte del equipo de I+D
+      - Construcción de pruebas de concepto para validar la arquitectura cloud basada en eventos
       - Contribución a la migración de monolito MVC hacia microservicios
       - Implementación de integraciones con API gateway y colas de mensajes
       - Participación en sesiones de diseño técnico y revisiones de arquitectura
@@ -87,17 +98,21 @@ experience:
     role: Arquitecto de Software
     type: fulltime
     location: "Bogotá, Colombia"
-    start_date: "2016-06"
-    end_date: "2017-12"
-    summary: Diseño de arquitecturas de software para soluciones de tecnología bancaria y financiera.
+    start_date: "2016-03"
+    end_date: "2017-10"
+    summary: >-
+      Arquitecto de software en una implementación BPM construida sobre
+      Bizagi. Lideré el diseño de los procesos de negocio y sus
+      integraciones a través de sistemas bancarios empresariales.
     responsibilities:
-      - Definición de arquitectura de software para sistemas bancarios empresariales
-      - Evaluación de stacks tecnológicos y decisiones de construir vs comprar
+      - Diseño de procesos BPM en Bizagi para flujos de trabajo bancarios empresariales
+      - Definición de integraciones entre la plataforma BPM y los sistemas bancarios circundantes
       - Creación de documentación técnica y diagramas de arquitectura
       - Aseguramiento del cumplimiento con estándares de la industria financiera
     achievements:
       - Establecimiento de patrones arquitectónicos adoptados en múltiples proyectos
     technologies:
+      - Bizagi
       - Java
       - Spring Boot
       - Oracle
@@ -105,19 +120,23 @@ experience:
 
   - id: hardnetics
     company: Hardnetics LTDA
-    role: Desarrollador Oracle SOA
+    role: Arquitecto de Soluciones Oracle EBS
     type: fulltime
     location: "Bogotá, Colombia"
-    start_date: "2016-01"
-    end_date: "2016-05"
-    summary: Desarrollo de soluciones de integración basadas en Oracle SOA para clientes empresariales.
+    start_date: "2015-11"
+    end_date: "2016-03"
+    summary: >-
+      Contratado para definir la arquitectura y el diseño técnico de una
+      implementación de Oracle E-Business Suite para una empresa de
+      telecomunicaciones.
     responsibilities:
-      - Desarrollo de integraciones empresariales basadas en SOA
-      - Construcción y mantenimiento de servicios middleware Oracle
-      - Integración de sistemas dispares usando servicios web y mensajería
+      - Diseño de la arquitectura y enfoque técnico para el despliegue de Oracle EBS
+      - Definición de integraciones entre los módulos EBS y los sistemas circundantes del cliente
+      - Producción de documentación de arquitectura y registros de decisión de diseño
     achievements:
-      - Entrega de soluciones de integración empresarial en plazo
+      - Entrega de artefactos de arquitectura y diseño para la implementación de EBS
     technologies:
+      - Oracle EBS
       - Java
       - Oracle
       - SOA
@@ -127,15 +146,17 @@ experience:
     role: Consultor Senior
     type: contract
     location: "Bogotá, Colombia"
-    start_date: "2015-01"
-    end_date: "2015-12"
-    summary: Consultor senior de tecnología proporcionando orientación en desarrollo de software y arquitectura a clientes empresariales.
+    start_date: "2015-03"
+    end_date: "2015-11"
+    summary: >-
+      Consultor senior liderando una implementación de gestión de contenido
+      (ECM) y su integración con el sistema ERP del cliente.
     responsibilities:
-      - Consultoría en arquitectura de software y decisiones tecnológicas
-      - Desarrollo de aplicaciones empresariales personalizadas
-      - Realización de evaluaciones técnicas y revisiones de código
+      - Liderazgo de la implementación técnica de la plataforma ECM
+      - Diseño y construcción de la integración ERP-a-ECM
+      - Coordinación de flujos de datos entre sistemas y reglas de consistencia
     achievements:
-      - Entrega de compromisos de consultoría para múltiples clientes empresariales
+      - Entrega de la implementación ECM y la integración con ERP en plazo
     technologies:
       - Java
       - JavaScript
@@ -144,18 +165,21 @@ experience:
 
   - id: soaint
     company: Soaint SAS
-    role: Consultor
+    role: Consultor Funcional / Técnico
     type: contract
     location: "Bogotá, Colombia"
     start_date: "2013-01"
-    end_date: "2014-12"
-    summary: Consultor tecnológico trabajando en proyectos de desarrollo de software empresarial.
+    end_date: "2015-03"
+    summary: >-
+      Consultor funcional y técnico en proyectos de gobierno y engagements
+      a través de múltiples sectores económicos.
     responsibilities:
-      - Desarrollo de aplicaciones empresariales para organizaciones cliente
+      - Entrega de análisis funcional e implementación técnica en múltiples engagements de clientes
+      - Trabajo en proyectos del sector gubernamental y clientes privados en industrias diversas
       - Participación en levantamiento de requisitos y diseño técnico
       - Soporte a sistemas en producción y resolución de incidentes
     achievements:
-      - Entrega exitosa de múltiples proyectos de clientes
+      - Entrega exitosa de múltiples proyectos de clientes a través de sectores gubernamentales y privados
     technologies:
       - Java
       - JavaScript
