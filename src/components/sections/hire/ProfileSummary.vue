@@ -49,14 +49,53 @@
 
       <div class="action-row d-flex flex-wrap justify-content-center align-items-center gap-3">
         <a
-          v-if="profile.pdf_path"
-          :href="profile.pdf_path"
+          v-if="cvVersions.length === 1"
+          :href="cvVersions[0].path"
           download
           class="btn btn-download btn-lg px-4"
         >
           <i class="bi bi-download me-2" aria-hidden="true"></i>
           {{ t('actions.downloadCv') }}
         </a>
+
+        <div
+          v-else-if="cvVersions.length > 1"
+          ref="cvDropdownRef"
+          class="cv-dropdown"
+        >
+          <button
+            type="button"
+            class="btn btn-download btn-lg px-4 cv-dropdown-toggle"
+            aria-haspopup="menu"
+            :aria-expanded="cvMenuOpen"
+            :aria-label="t('cv.chooseVersion')"
+            @click.stop="toggleCvMenu"
+          >
+            <i class="bi bi-download me-2" aria-hidden="true"></i>
+            {{ t('actions.downloadCv') }}
+            <i
+              class="bi bi-chevron-down ms-2 cv-chevron"
+              :class="{ 'cv-chevron-open': cvMenuOpen }"
+              aria-hidden="true"
+            ></i>
+          </button>
+          <Transition name="cv-menu">
+            <ul v-if="cvMenuOpen" class="cv-menu" role="menu">
+              <li v-for="version in cvVersions" :key="version.id" role="none">
+                <a
+                  :href="version.path"
+                  download
+                  class="cv-menu-item"
+                  role="menuitem"
+                  @click="closeCvMenu"
+                >
+                  {{ t(`cv.${version.id}`) }}
+                </a>
+              </li>
+            </ul>
+          </Transition>
+        </div>
+
         <div v-else>
           <span class="btn btn-outline-secondary btn-lg px-4 btn-unavailable">
             <i class="bi bi-download me-2" aria-hidden="true"></i>
@@ -103,7 +142,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const props = defineProps({
@@ -115,6 +154,46 @@ const props = defineProps({
 })
 
 const { t } = useI18n()
+
+const cvMenuOpen = ref(false)
+const cvDropdownRef = ref(null)
+
+const cvVersions = computed(() => {
+  const versions = props.profile.cv_versions
+  if (Array.isArray(versions) && versions.length > 0) return versions
+  if (props.profile.pdf_path) {
+    return [{ id: 'default', path: props.profile.pdf_path }]
+  }
+  return []
+})
+
+const toggleCvMenu = () => {
+  cvMenuOpen.value = !cvMenuOpen.value
+}
+
+const closeCvMenu = () => {
+  cvMenuOpen.value = false
+}
+
+const handleOutsideClick = (event) => {
+  if (cvDropdownRef.value && !cvDropdownRef.value.contains(event.target)) {
+    closeCvMenu()
+  }
+}
+
+const handleEscape = (event) => {
+  if (event.key === 'Escape') closeCvMenu()
+}
+
+onMounted(() => {
+  document.addEventListener('click', handleOutsideClick)
+  document.addEventListener('keydown', handleEscape)
+})
+
+onBeforeUnmount(() => {
+  document.removeEventListener('click', handleOutsideClick)
+  document.removeEventListener('keydown', handleEscape)
+})
 
 const hasGlance = computed(() => {
   const p = props.profile
@@ -251,6 +330,80 @@ const hasContactLinks = computed(() => {
   pointer-events: none;
 }
 
+.cv-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.cv-dropdown-toggle {
+  cursor: pointer;
+}
+
+.cv-chevron {
+  display: inline-block;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.85em;
+}
+
+.cv-chevron-open {
+  transform: rotate(-180deg);
+}
+
+.cv-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 220px;
+  margin: 0;
+  padding: 0.5rem 0;
+  list-style: none;
+  background: var(--color-background, #fff);
+  border: 1px solid var(--color-border, rgba(99, 102, 241, 0.25));
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+  z-index: 50;
+  text-align: left;
+}
+
+.cv-menu-item {
+  display: block;
+  padding: 0.55rem 1rem;
+  color: var(--color-text, #1f2937);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.cv-menu-item:hover,
+.cv-menu-item:focus-visible {
+  background-color: rgba(99, 102, 241, 0.10);
+  color: var(--color-primary);
+}
+
+.cv-menu-item:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.cv-menu-enter-active,
+.cv-menu-leave-active {
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.cv-menu-enter-from,
+.cv-menu-leave-to {
+  opacity: 0;
+  transform: translateX(-50%) translateY(-6px);
+}
+
+.cv-menu-enter-to,
+.cv-menu-leave-from {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 .contact-links {
   align-items: center;
 }
@@ -296,6 +449,11 @@ const hasContactLinks = computed(() => {
   .btn-icon:hover,
   .btn-icon:focus-visible {
     transform: none;
+  }
+  .cv-chevron,
+  .cv-menu-enter-active,
+  .cv-menu-leave-active {
+    transition: none;
   }
 }
 </style>

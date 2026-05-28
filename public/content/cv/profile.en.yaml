@@ -29,3 +29,8 @@ profile:
     website: https://www.eddyjim.com
     location: "Bogotá, Colombia"
   pdf_path: /content/cv/cv.en.pdf
+  cv_versions:
+    - id: short
+      path: /content/cv/cv.en.pdf
+    - id: detailed
+      path: /content/cv/cv.en.detailed.pdf
