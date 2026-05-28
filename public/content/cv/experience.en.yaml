@@ -52,6 +52,8 @@ experience:
       - Built deployment pipelines for the new serverless infrastructure
     technologies:
       - Python
+      - Java
+      - Scala
       - JavaScript
       - Angular
       - React
