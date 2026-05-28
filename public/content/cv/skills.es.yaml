@@ -26,6 +26,10 @@ categories:
         proficiency: 4
         years: 8
         featured: false
+      - name: Scala
+        proficiency: 3
+        years: 2
+        featured: false
 
   - name: Frameworks Backend
     slug: backend-frameworks

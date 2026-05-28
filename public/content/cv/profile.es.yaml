@@ -7,10 +7,11 @@ profile:
     cloud-native sobre AWS. Actualmente embebido en BriteCore (SaaS de
     seguros), desarrollando servicios basados en eventos, un motor de
     facturación con máquina de estados y un agente de IA que resume
-    información de pólizas. Antes: construí la PoC que dio inicio a la
-    migración monolito-a-microservicios en Alkanza, y desarrollé
-    integraciones LTI serverless en Blackboard con Lambda, API Gateway y
-    Step Functions. Sólido en Python y full-stack con Vue/React.
+    información de pólizas. Antes: lideré el diseño e implementación de
+    un servicio LTI serverless que desacopló el monolito del LMS de
+    Blackboard, y construí la PoC que dio inicio a la migración
+    monolito-a-microservicios en Alkanza. Sólido en Python y full-stack
+    con Vue/React.
   available: true
   availability_note: Disponible para nuevos roles senior · Remoto
   work_mode: Remoto (Américas / Europa)
@@ -24,7 +25,6 @@ profile:
       level: Nativo
   contact:
     email: eddy@eddyjim.com
-    phone: "+57 (301) 773 5242"
     linkedin: https://linkedin.com/in/eddyjim
     github: https://github.com/eddyjim
     website: https://www.eddyjim.com

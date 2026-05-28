@@ -58,6 +58,11 @@
     "github": "GitHub profile",
     "email": "Send email"
   },
+  "cv": {
+    "short": "Short version",
+    "detailed": "Detailed version",
+    "chooseVersion": "Choose CV version"
+  },
   "errors": {
     "contentLoadFailed": "Content could not be loaded. Please refresh the page.",
     "pdfUnavailable": "PDF is currently unavailable."
