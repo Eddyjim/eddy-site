@@ -48,8 +48,8 @@ const MONTHS = {
 }
 
 const WORDS = {
-  en: { present: 'Present', earlier: 'Earlier', roles: 'roles', impact: 'Selected Impact', experience: 'Experience', stack: 'Stack', education: 'Education', summary: 'Summary', projects: 'Projects', tech: 'Tech', available: 'Available' },
-  es: { present: 'Presente', earlier: 'Anterior', roles: 'roles', impact: 'Logros Destacados', experience: 'Experiencia', stack: 'Stack', education: 'Educación', summary: 'Resumen', projects: 'Proyectos', tech: 'Tecnologías', available: 'Disponible' }
+  en: { present: 'Present', earlier: 'Earlier', roles: 'roles', impact: 'Selected Impact', experience: 'Experience', stack: 'Stack', education: 'Education', summary: 'Summary', projects: 'Projects', tech: 'Tech' },
+  es: { present: 'Presente', earlier: 'Anterior', roles: 'roles', impact: 'Logros Destacados', experience: 'Experiencia', stack: 'Stack', education: 'Educación', summary: 'Resumen', projects: 'Proyectos', tech: 'Tecnologías' }
 }
 
 /** Both spellings are accepted so a translated data file cannot break the logic. */
@@ -162,11 +162,15 @@ function designedHeader (profile, locale) {
     c.location && tex(c.location)
   ].filter(Boolean)
 
-  const badge = profile.available
-    ? `\\hfill{\\color{accent}\\small$\\bullet$}~{\\footnotesize\\color{muted}${tex(w.available)}}`
-    : ''
-
-  return `{\\fontsize{21}{23}\\selectfont\\bfseries ${tex(profile.name)}}${badge}\\par
+  // No availability badge here, deliberately. `available` is a mutable fact and
+  // a PDF is a durable, forwarded artifact: the site re-renders from YAML on
+  // every visit, but a shipped PDF sits in inboxes and recruiter databases long
+  // after the flag changes, and cannot be recalled. Availability lives on the
+  // site (profile.availability_note), which stays correct by construction.
+  // A CV is also self-evidently an availability signal by virtue of being sent.
+  // If a start date ever matters for contract work, add a dated field — a bare
+  // "Available" carries less than "Available from March 2026" and ages worse.
+  return `{\\fontsize{21}{23}\\selectfont\\bfseries ${tex(profile.name)}}\\par
 \\vspace{0.6mm}
 {\\footnotesize\\bfseries\\color{accent}\\MakeUppercase{${tex(profile.title)}}}\\par
 \\vspace{1.4mm}
@@ -228,7 +232,7 @@ ${achievements}
   // a fitting problem by deleting content the reader came for.
   const stack = skills.map((cat) =>
     `{\\scriptsize\\bfseries ${tex(cat.name)}}\\ {\\scriptsize\\color{muted}${cat.skills.map((s) => tex(s.name)).join(' \\textperiodcentered\\ ')}}\\par
-\\vspace{0.75mm}
+\\vspace{0.5mm}
 `).join('')
 
   const edu = education.map((e) =>
@@ -256,7 +260,9 @@ ${(profile.languages ?? []).map((l) =>
 `
     : ''
 
-  return `${preamble({ margin: '1.35cm', fontSize: '10pt' })}${sectionMacro}
+  // 1.2cm, matching what the previous ES one-pager used: Spanish runs 15-30%
+  // longer than English, and the Spanish edition is what sets this budget.
+  return `${preamble({ margin: '1.2cm', fontSize: '10pt' })}${sectionMacro}
 \\begin{document}
 ${designedHeader(profile, locale)}${coreStrip}{\\small ${tex(profile.summary)}}\\par
 \\vspace{1.2mm}
