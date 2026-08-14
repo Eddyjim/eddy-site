@@ -8,14 +8,14 @@
           v-for="entry in entries"
           :key="entry.id"
           class="fresh-card mb-3 experience-card"
-          :class="{ 'experience-card-current': entry.end_date === 'present' }"
+          :class="{ 'experience-card-current': isCurrent(entry.end_date) }"
         >
           <div class="p-3">
             <header class="experience-header">
               <div class="d-flex align-items-center flex-wrap gap-2 mb-1">
                 <h3 class="h5 mb-0 fw-semibold">{{ entry.role }}</h3>
                 <span
-                  v-if="entry.end_date === 'present'"
+                  v-if="isCurrent(entry.end_date)"
                   class="badge badge-present"
                 >
                   {{ t('labels.present') }}
@@ -28,8 +28,10 @@
               </p>
               <p class="mb-1 small text-body-tertiary">
                 {{ formatDate(entry.start_date) }} &ndash; {{ formatEndDate(entry.end_date) }}
-                <span class="tenure-divider mx-1">&middot;</span>
-                <span class="tenure-text">{{ tenureLabel(entry.start_date, entry.end_date) }}</span>
+                <template v-if="tenureLabel(entry.start_date, entry.end_date)">
+                  <span class="tenure-divider mx-1">&middot;</span>
+                  <span class="tenure-text">{{ tenureLabel(entry.start_date, entry.end_date) }}</span>
+                </template>
               </p>
               <p class="mb-0 mt-2">{{ entry.summary }}</p>
             </header>
@@ -99,6 +101,9 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocale } from '@/composables/useLocale'
+// Shared with scripts/build-cv.mjs so the page and the PDFs agree on which
+// role is current. See cvDates.mjs for why both sentinel spellings are taken.
+import { isCurrent, monthsBetween } from '@/lib/cvDates.mjs'
 
 defineProps({
   entries: {
@@ -130,17 +135,17 @@ const formatDate = (dateStr) => {
 }
 
 const formatEndDate = (dateStr) => {
-  if (dateStr === 'present') {
+  if (isCurrent(dateStr)) {
     return t('labels.present')
   }
   return formatDate(dateStr)
 }
 
 const tenureLabel = (startStr, endStr) => {
-  const start = new Date(startStr + '-01')
-  const end = endStr === 'present' ? new Date() : new Date(endStr + '-01')
-  let totalMonths = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth())
-  if (totalMonths < 1) totalMonths = 1
+  const totalMonths = monthsBetween(startStr, endStr)
+  // null means the dates were unusable. Render nothing rather than a
+  // plausible-looking figure derived from bad data.
+  if (totalMonths === null) return ''
   const years = Math.floor(totalMonths / 12)
   const months = totalMonths % 12
   if (years === 0) return `${months}m`

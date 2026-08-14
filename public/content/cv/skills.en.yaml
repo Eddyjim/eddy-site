@@ -31,6 +31,50 @@ categories:
         years: 2
         featured: false
 
+  - name: AI & LLM Tooling
+    slug: ai-llm-tooling
+    skills:
+      - name: Claude / Claude Code
+        proficiency: 5
+        years: 3
+        featured: true
+      - name: Cursor
+        proficiency: 4
+        years: 2
+        featured: true
+      - name: OpenAI Codex
+        proficiency: 3
+        years: 1
+        featured: false
+      - name: Langfuse
+        proficiency: 3
+        years: 1
+        featured: false
+
+  - name: Agent Engineering
+    slug: agent-engineering
+    skills:
+      - name: MCP server design
+        proficiency: 4
+        years: 2
+        featured: true
+      - name: Multi-agent orchestration
+        proficiency: 4
+        years: 2
+        featured: true
+      - name: LangGraph (state graphs)
+        proficiency: 4
+        years: 2
+        featured: true
+      - name: Agent harness design
+        proficiency: 4
+        years: 1
+        featured: false
+      - name: Spec-driven development
+        proficiency: 4
+        years: 1
+        featured: false
+
   - name: Backend Frameworks
     slug: backend-frameworks
     skills:
@@ -146,6 +190,14 @@ categories:
         proficiency: 5
         years: 5
         featured: true
+      - name: EC2
+        proficiency: 4
+        years: 8
+        featured: false
+      - name: ECS / Fargate
+        proficiency: 4
+        years: 3
+        featured: false
       - name: API Gateway
         proficiency: 4
         years: 5
@@ -174,9 +226,73 @@ categories:
         proficiency: 4
         years: 4
         featured: false
+
+  - name: Process & Integration
+    slug: process-integration
+    skills:
+      - name: BPMN process design
+        proficiency: 4
+        years: 5
+        featured: true
+      - name: BPM implementation
+        proficiency: 4
+        years: 5
+        featured: true
+      - name: SOA architecture
+        proficiency: 4
+        years: 4
+        featured: true
+      - name: Bizagi
+        proficiency: 4
+        years: 2
+        featured: false
+      - name: Apache Airflow
+        proficiency: 4
+        years: 3
+        featured: true
+      - name: Orkes Conductor
+        proficiency: 4
+        years: 2
+        featured: false
       - name: Tray.io
         proficiency: 3
         years: 2
+        featured: false
+      - name: Enterprise integration
+        proficiency: 4
+        years: 6
+        featured: false
+
+  - name: Content Management
+    slug: content-management
+    skills:
+      - name: CMS / ECM implementation
+        proficiency: 5
+        years: 4
+        featured: true
+      - name: Content modelling
+        proficiency: 4
+        years: 4
+        featured: true
+      - name: Content platform integration
+        proficiency: 4
+        years: 3
+        featured: false
+
+  - name: Payments
+    slug: payments
+    skills:
+      - name: Stripe
+        proficiency: 4
+        years: 2
+        featured: true
+      - name: Payment gateway integration
+        proficiency: 4
+        years: 4
+        featured: false
+      - name: Billing systems
+        proficiency: 4
+        years: 3
         featured: false
 
   - name: Tools
