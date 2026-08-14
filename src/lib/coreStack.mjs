@@ -7,41 +7,29 @@
  */
 
 /**
- * One technology is taken from each of these categories, in this order.
+ * Reads the explicit `core: true` flag rather than deriving a ranking.
  *
- * One-per-category is deliberate: ranking all skills by proficiency and taking
- * the top eight returns eight programming languages and says nothing about
- * cloud or agents. Breadth is the point.
- */
-export const CORE_CATEGORIES = [
-  'languages',
-  'cloud-aws',
-  'agent-engineering',
-  'ai-llm-tooling',
-  'backend-frameworks',
-  'frontend-frameworks',
-  'devops-cicd',
-  'databases'
-]
-
-/**
- * @param {Array<{slug: string, skills: Array<{name: string, proficiency: number, years: number, featured: boolean}>}>} categories
- * @returns {string[]} one skill name per category, in CORE_CATEGORIES order
+ * This was previously derived — highest (proficiency, years) featured skill per
+ * category. That silently changed the headline as an unrelated side effect:
+ * featuring S3 for the homepage gave it (5, 6y) against AWS Lambda's (5, 5y),
+ * so S3 displaced Lambda in the strip. The rule behaved correctly and produced
+ * the wrong marketing outcome, which is the signal that this should be an
+ * editorial choice rather than a sort.
+ *
+ * The flag lives in the YAML rather than a list of names in this file, because
+ * skill names are translated: `MCP server design` is `Diseño de servidores MCP`
+ * in Spanish, so an English list would silently yield nothing for `es`. A flag
+ * is locale-independent by construction, and the existing EN/ES parity check
+ * catches it if the two files disagree.
+ *
+ * @param {Array<{slug: string, skills: Array<{name: string, core?: boolean}>}>} categories
+ * @returns {string[]} core skill names, in the category order of the data
  */
 export function coreStack (categories) {
   if (!Array.isArray(categories)) return []
 
-  return CORE_CATEGORIES.map((slug) => {
-    const category = categories.find((c) => c.slug === slug)
-    if (!category || !Array.isArray(category.skills)) return null
-
-    // Prefer featured skills; fall back to the whole category so a category
-    // with nothing featured still contributes rather than silently vanishing.
-    const featured = category.skills.filter((s) => s.featured)
-    const ranked = (featured.length ? featured : category.skills)
-      .slice()
-      .sort((a, b) => (b.proficiency - a.proficiency) || (b.years - a.years))
-
-    return ranked[0]?.name ?? null
-  }).filter(Boolean)
+  return categories
+    .flatMap((category) => (Array.isArray(category.skills) ? category.skills : []))
+    .filter((skill) => skill?.core === true)
+    .map((skill) => skill.name)
 }

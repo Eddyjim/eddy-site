@@ -127,6 +127,14 @@ ${atsSafe
 \\usepackage[hidelinks]{hyperref}
 ${atsSafe ? '% microtype omitted: its inter-word adjustments turn spaces into\n% positioning offsets, so text extraction loses word boundaries.' : '\\usepackage{microtype}'}
 
+% Reproducible output. pdflatex otherwise stamps /CreationDate, /ModDate and a
+% random /ID trailer into every build, so identical input produced a different
+% binary each run and dirtied all six tracked PDFs — which bit us mid-release.
+% Guarded with \\ifdefined so a engine without these primitives still builds.
+\\ifdefined\\pdfinfoomitdate\\pdfinfoomitdate=1\\fi
+\\ifdefined\\pdftrailerid\\pdftrailerid{}\\fi
+\\ifdefined\\pdfsuppressptexinfo\\pdfsuppressptexinfo=-1\\fi
+
 \\definecolor{accent}{HTML}{${BRAND.accent}}
 \\definecolor{rulecol}{HTML}{${BRAND.rule}}
 \\definecolor{rulealt}{HTML}{${BRAND.ruleAlt}}
