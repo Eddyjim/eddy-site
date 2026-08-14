@@ -19,6 +19,32 @@ tests/
 
 npm test && npm run lint
 
+Note: `package.json` defines neither `test` nor `lint` as of 2026-08-14; the
+line above is aspirational. `npm run build` is the working verification.
+
+## CV generation
+
+`public/content/cv/*.yaml` is the single source of truth for the site **and**
+the PDFs. Run `npm run cv` (optionally `npm run cv -- en` or `-- en:short`).
+
+- **Never hand-edit LaTeX.** `cv/generated/*.tex` is build output and gitignored.
+  The old hand-maintained `cv/*.tex` files were deleted precisely because they
+  drifted from the YAML.
+- Six variants: `{en,es}` × `{short, detailed, ats}`, defined in `VARIANTS` in
+  `scripts/build-cv.mjs`. Short CVs have an enforced 1-page budget; the build
+  fails if exceeded.
+- The `ats` variants are single-column and plain, for job-portal uploads. The
+  two-column designed layout interleaves skills and job titles when a parser
+  extracts text, which is why the plain twin exists. Keep them single-column,
+  free of tabular text and decorative glyphs.
+- Requires `pdflatex` at `/Library/TeX/texbin/pdflatex`.
+- `src/lib/coreStack.mjs` derives the headline "core stack" and is imported by
+  **both** the generator and `CoreStack.vue` on /hire-me. Change the rule there,
+  never in one consumer, or the PDF and the site will advertise different stacks.
+
+Note: ESLint is a devDependency but the project has no ESLint config, so
+`npx eslint` fails. Worth setting up if linting is expected.
+
 ## Code Style
 
 JavaScript (ES2022+), Vue 3.2+: Follow standard conventions

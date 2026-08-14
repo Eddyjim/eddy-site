@@ -32,3 +32,9 @@ coverage
 .specify/
 .speckit/
 specs/
+
+# Generated CV output (source of truth is public/content/cv/*.yaml).
+# `npm run cv` writes LaTeX and PDFs here, then copies the PDFs to
+# public/content/cv/ — those served copies are the tracked ones.
+cv/generated/
+cv/*.pdf
