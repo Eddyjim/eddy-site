@@ -226,9 +226,73 @@ categories:
         proficiency: 4
         years: 4
         featured: false
+
+  - name: Procesos e Integración
+    slug: process-integration
+    skills:
+      - name: Diseño de procesos BPMN
+        proficiency: 4
+        years: 5
+        featured: true
+      - name: Implementación BPM
+        proficiency: 4
+        years: 5
+        featured: true
+      - name: Arquitectura SOA
+        proficiency: 4
+        years: 4
+        featured: true
+      - name: Bizagi
+        proficiency: 4
+        years: 2
+        featured: false
+      - name: Apache Airflow
+        proficiency: 4
+        years: 3
+        featured: true
+      - name: Orkes Conductor
+        proficiency: 4
+        years: 2
+        featured: false
       - name: Tray.io
         proficiency: 3
         years: 2
+        featured: false
+      - name: Integración empresarial
+        proficiency: 4
+        years: 6
+        featured: false
+
+  - name: Gestión Documental
+    slug: content-management
+    skills:
+      - name: Implementación CMS / ECM
+        proficiency: 5
+        years: 4
+        featured: true
+      - name: Modelado de contenido
+        proficiency: 4
+        years: 4
+        featured: true
+      - name: Integración de plataformas de contenido
+        proficiency: 4
+        years: 3
+        featured: false
+
+  - name: Pagos
+    slug: payments
+    skills:
+      - name: Stripe
+        proficiency: 4
+        years: 2
+        featured: true
+      - name: Integración de pasarelas de pago
+        proficiency: 4
+        years: 4
+        featured: false
+      - name: Sistemas de facturación
+        proficiency: 4
+        years: 3
         featured: false
 
   - name: Herramientas

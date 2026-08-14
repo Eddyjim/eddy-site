@@ -19,6 +19,11 @@ services:
     description: Monolith-to-microservices migration, event-driven architecture design, and legacy system modernization with 10+ years of experience.
     icon: bi-diagram-3
 
+  - name: BPM & Process Optimization
+    slug: bpm-process-optimization
+    description: "Business process analysis, BPMN modelling and BPM platform implementation, plus SOA and enterprise integration across banking, government and insurance systems."
+    icon: bi-diagram-2
+
   - name: AI & Agent Engineering
     slug: ai-agent-engineering
     description: "Design and delivery of LLM-backed systems: MCP servers, multi-agent orchestration with LangGraph, and Langfuse-instrumented evaluation — built spec-first so behaviour stays reproducible."
