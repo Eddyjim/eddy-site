@@ -18,3 +18,13 @@ services:
     slug: architecture-migration
     description: Migración de monolitos a microservicios, diseño de arquitectura basada en eventos y modernización de sistemas legados con más de 10 años de experiencia.
     icon: bi-diagram-3
+
+  - name: BPM y Optimización de Procesos
+    slug: bpm-process-optimization
+    description: "Análisis de procesos de negocio, modelado BPMN e implementación en plataformas BPM, además de SOA e integración empresarial en sistemas bancarios, de gobierno y de seguros."
+    icon: bi-diagram-2
+
+  - name: Ingeniería de IA y Agentes
+    slug: ai-agent-engineering
+    description: "Diseño y entrega de sistemas basados en LLM: servidores MCP, orquestación multi-agente con LangGraph y evaluación instrumentada con Langfuse — construidos spec-first para que el comportamiento sea reproducible."
+    icon: bi-robot
