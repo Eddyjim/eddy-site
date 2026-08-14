@@ -16,7 +16,7 @@
       <h1 class="display-4 fw-bold text-gradient mb-2">{{ profile.name }}</h1>
       <h2 class="fs-4 text-body-secondary fw-normal mb-2">{{ profile.title }}</h2>
       <p v-if="profile.tagline" class="profile-tagline mb-4">{{ profile.tagline }}</p>
-      <p class="lead mx-auto mb-4 profile-text">{{ profile.summary }}</p>
+      <p class="mx-auto mb-4 profile-text">{{ profile.summary }}</p>
 
       <div
         v-if="hasGlance"
@@ -248,7 +248,12 @@ const hasContactLinks = computed(() => {
 }
 
 .profile-text {
-  max-width: 700px;
+  /* Measured in ch, not px: this paragraph runs ~105 words in English and ~135
+     in Spanish, and a fixed 700px that read well at .lead's 20px would be ~87
+     characters per line at body size — past the comfortable 65-75 range. */
+  max-width: 68ch;
+  font-size: 1.02rem;
+  line-height: 1.7;
   color: var(--color-text);
 }
 

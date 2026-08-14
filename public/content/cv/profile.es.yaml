@@ -2,18 +2,15 @@ profile:
   name: Edward Jiménez M.
   title: Ingeniero de Software Senior · Cloud, Backend y Agentes de IA
   tagline: Sistemas cloud-native y agentes de IA, de principio a fin.
+  # Sin nombrar al cliente actual ni decir "Actualmente": la sección de
+  # experiencia ya lo indica, derivado de end_date.
   summary: >-
     Ingeniero de software senior con más de 10 años construyendo sistemas
-    cloud-native sobre AWS. Actualmente embebido en BriteCore (SaaS de
-    seguros), desarrollando servicios basados en eventos, un motor de
-    facturación con máquina de estados y un agente de IA que resume
-    información de pólizas. Antes: lideré el diseño e implementación de
-    un servicio LTI serverless que desacopló el monolito del LMS de
-    Blackboard, y construí la PoC que dio inicio a la migración
-    monolito-a-microservicios en Alkanza. Construye herramientas basadas en
-    LLM de principio a fin: servidores MCP, harnesses multi-agente sobre
-    LangGraph y evaluación instrumentada con Langfuse, con entrega
-    spec-first. Sólido en Python y full-stack con Vue/React.
+    cloud-native sobre AWS. Trabajo reciente en servicios basados en
+    eventos, un motor de facturación con máquina de estados y un agente de
+    IA para resumen de pólizas de seguros. Construye sistemas de agentes
+    sobre MCP y LangGraph, sobre una década en consultoría BPM/SOA, pagos
+    y migraciones de plataforma.
   available: true
   availability_note: Disponible para nuevos roles senior · Remoto
   work_mode: Remoto (Américas / Europa)
