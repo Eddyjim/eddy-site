@@ -1,7 +1,7 @@
 profile:
   name: Edward Jiménez M.
-  title: Ingeniero de Software Senior · Cloud y Backend
-  tagline: Sistemas cloud-native, de principio a fin.
+  title: Ingeniero de Software Senior · Cloud, Backend y Agentes de IA
+  tagline: Sistemas cloud-native y agentes de IA, de principio a fin.
   summary: >-
     Ingeniero de software senior con más de 10 años construyendo sistemas
     cloud-native sobre AWS. Actualmente embebido en BriteCore (SaaS de
@@ -10,8 +10,10 @@ profile:
     información de pólizas. Antes: lideré el diseño e implementación de
     un servicio LTI serverless que desacopló el monolito del LMS de
     Blackboard, y construí la PoC que dio inicio a la migración
-    monolito-a-microservicios en Alkanza. Sólido en Python y full-stack
-    con Vue/React.
+    monolito-a-microservicios en Alkanza. Construye herramientas basadas en
+    LLM de principio a fin: servidores MCP, harnesses multi-agente sobre
+    LangGraph y evaluación instrumentada con Langfuse, con entrega
+    spec-first. Sólido en Python y full-stack con Vue/React.
   available: true
   availability_note: Disponible para nuevos roles senior · Remoto
   work_mode: Remoto (Américas / Europa)
@@ -30,3 +32,8 @@ profile:
     website: https://www.eddyjim.com
     location: "Bogotá, Colombia"
   pdf_path: /content/cv/cv.es.pdf
+  cv_versions:
+    - id: short
+      path: /content/cv/cv.es.pdf
+    - id: detailed
+      path: /content/cv/cv.es.detailed.pdf

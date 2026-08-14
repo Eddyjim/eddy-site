@@ -19,7 +19,7 @@ const { t } = useI18n()
       <div
         v-for="(service, index) in services"
         :key="service.slug"
-        class="col-12 col-md-6 col-lg-3"
+        class="col-12 col-md-6 col-lg-4"
       >
         <div class="service-card h-100 p-4">
           <div class="service-icon-wrapper mb-3">

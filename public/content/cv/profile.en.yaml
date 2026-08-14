@@ -1,7 +1,7 @@
 profile:
   name: Edward Jiménez M.
-  title: Senior Software Engineer · Cloud & Backend
-  tagline: Cloud-native systems, end-to-end.
+  title: Senior Software Engineer · Cloud, Backend & AI Agents
+  tagline: Cloud-native systems and AI agents, end-to-end.
   summary: >-
     Senior software engineer with 10+ years building cloud-native systems
     on AWS. Currently embedded with BriteCore (insurance SaaS), shipping
@@ -9,7 +9,9 @@ profile:
     that summarizes policy data. Earlier: led the design and implementation
     of a serverless LTI service that decoupled the Blackboard LMS monolith,
     and built the PoC seeding an MVC monolith-to-microservices migration at
-    Alkanza. Strong in Python and full-stack with Vue/React.
+    Alkanza. Builds LLM-backed tooling end-to-end: MCP servers, multi-agent
+    harnesses on LangGraph, and Langfuse-instrumented evaluation, delivered
+    spec-first. Strong in Python and full-stack with Vue/React.
   available: true
   availability_note: Available for new senior roles · Remote-first
   work_mode: Remote (Americas / EU)

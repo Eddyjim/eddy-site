@@ -31,6 +31,50 @@ categories:
         years: 2
         featured: false
 
+  - name: Herramientas de IA y LLM
+    slug: ai-llm-tooling
+    skills:
+      - name: Claude / Claude Code
+        proficiency: 5
+        years: 3
+        featured: true
+      - name: Cursor
+        proficiency: 4
+        years: 2
+        featured: true
+      - name: OpenAI Codex
+        proficiency: 3
+        years: 1
+        featured: false
+      - name: Langfuse
+        proficiency: 3
+        years: 1
+        featured: false
+
+  - name: Ingeniería de Agentes
+    slug: agent-engineering
+    skills:
+      - name: Diseño de servidores MCP
+        proficiency: 4
+        years: 2
+        featured: true
+      - name: Orquestación multi-agente
+        proficiency: 4
+        years: 2
+        featured: true
+      - name: LangGraph (grafos de estado)
+        proficiency: 4
+        years: 2
+        featured: true
+      - name: Diseño de harness de agentes
+        proficiency: 4
+        years: 1
+        featured: false
+      - name: Desarrollo guiado por especificaciones
+        proficiency: 4
+        years: 1
+        featured: false
+
   - name: Frameworks Backend
     slug: backend-frameworks
     skills:
@@ -146,6 +190,14 @@ categories:
         proficiency: 5
         years: 5
         featured: true
+      - name: EC2
+        proficiency: 4
+        years: 8
+        featured: false
+      - name: ECS / Fargate
+        proficiency: 4
+        years: 3
+        featured: false
       - name: API Gateway
         proficiency: 4
         years: 5
