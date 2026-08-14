@@ -22,6 +22,25 @@ npm test && npm run lint
 Note: `package.json` defines neither `test` nor `lint` as of 2026-08-14; the
 line above is aspirational. `npm run build` is the working verification.
 
+## Branching
+
+GitFlow: `feature/*` → `develop` → `release/x.y.z` → `main`. Production deploys
+on push to `main`, staging on push to `develop` (`.github/workflows/ci-cd.yml`).
+
+**`main` must stay an ancestor of `develop`.** Releases merge into `main` and do
+not return on their own, so `main` accumulates commits unreachable from `develop`
+and the branches diverge — that is what made `release/1.4.0` → `main`
+unmergeable. `.github/workflows/back-merge.yml` now runs after every push to
+`main` and either pushes the back-merge or opens a PR for it. If a release
+branch ever fails to merge into `main`, check this first:
+
+```sh
+git merge-base --is-ancestor origin/main origin/develop   # must succeed
+```
+
+Note `develop` currently has `lock_branch: true` plus a required review, and
+self-approval is impossible, so every merge into it needs `gh pr merge --admin`.
+
 ## CV generation
 
 `public/content/cv/*.yaml` is the single source of truth for the site **and**
