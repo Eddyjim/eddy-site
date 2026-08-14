@@ -14,7 +14,8 @@
     "experience": "Experiencia",
     "education": "Educación",
     "projects": "Proyectos",
-    "profileSummary": "Resumen Profesional"
+    "profileSummary": "Resumen Profesional",
+    "coreStack": "Stack Principal"
   },
   "actions": {
     "downloadCv": "Descargar CV",
