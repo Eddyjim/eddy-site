@@ -1,0 +1,93 @@
+name: Back-merge main into develop
+
+# Releases are merged into main and, without this, never return to develop, so
+# main accumulates commits unreachable from develop and the branches diverge
+# permanently. That divergence made release/1.4.0 -> main unmergeable and had to
+# be untangled by hand mid-release.
+#
+# After every push to main this attempts the back-merge. A clean merge is pushed
+# straight to develop; anything needing judgement is raised as a PR rather than
+# resolved automatically, because silently auto-resolving conflicts on a shared
+# branch is how content gets lost.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  back-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: develop
+
+      - name: Identify as the workflow
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Skip if main is already an ancestor
+        id: check
+        run: |
+          if git merge-base --is-ancestor origin/main origin/develop; then
+            echo "already in sync; nothing to do"
+            echo "needed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "needed=true" >> "$GITHUB_OUTPUT"
+            git log --oneline origin/develop..origin/main | sed 's/^/  /'
+          fi
+
+      - name: Attempt the merge
+        id: merge
+        if: steps.check.outputs.needed == 'true'
+        run: |
+          if git merge origin/main --no-ff -m "Back-merge main into develop after release
+
+          Keeps main an ancestor of develop so the next release branch merges
+          cleanly. Opened automatically by .github/workflows/back-merge.yml."; then
+            echo "clean=true" >> "$GITHUB_OUTPUT"
+          else
+            git merge --abort
+            echo "clean=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      # develop is a protected branch, so this push only succeeds where the
+      # token is permitted to write to it. If it is rejected the next step still
+      # opens a PR, so the back-merge is never silently dropped.
+      - name: Push clean merge to develop
+        id: push
+        if: steps.merge.outputs.clean == 'true'
+        continue-on-error: true
+        run: git push origin develop
+
+      - name: Open a PR when the push is blocked or the merge conflicts
+        if: steps.check.outputs.needed == 'true' && (steps.merge.outputs.clean != 'true' || steps.push.outcome == 'failure')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          BRANCH="chore/back-merge-main-$(git rev-parse --short origin/main)"
+          git checkout -B "$BRANCH" origin/main
+          git push -f origin "$BRANCH"
+          if [ "${{ steps.merge.outputs.clean }}" = "true" ]; then
+            REASON="The merge was clean but the push to develop was rejected by branch protection."
+          else
+            REASON="The merge has conflicts and needs a human. Do not auto-resolve."
+          fi
+          gh pr create --base develop --head "$BRANCH" \
+            --title "Back-merge main into develop" \
+            --body "$REASON
+
+          Without this, main accumulates release merge commits that never return to
+          develop, the branches diverge, and a later release branch fails to merge
+          into main — which is what happened to release/1.4.0.
+
+          Opened automatically by \`.github/workflows/back-merge.yml\`." \
+            || echo "a back-merge PR is already open"
