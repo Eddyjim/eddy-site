@@ -61,6 +61,7 @@
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocale } from '@/composables/useLocale'
+import { isCurrent } from '@/lib/cvDates.mjs'
 
 defineProps({
   entries: {
@@ -92,7 +93,7 @@ const formatDate = (dateStr) => {
 }
 
 const formatEndDate = (dateStr) => {
-  if (dateStr === 'present') {
+  if (isCurrent(dateStr)) {
     return t('labels.present')
   }
   return formatDate(dateStr)

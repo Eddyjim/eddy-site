@@ -17,8 +17,10 @@ import { execFileSync } from 'node:child_process'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import yaml from 'js-yaml'
-// Shared with the site's CoreStack.vue so the PDF and /hire-me cannot disagree.
+// Shared with the site so the PDFs and /hire-me cannot disagree: CoreStack.vue
+// uses coreStack(), ExperienceSection.vue and EducationSection.vue use isCurrent().
 import { coreStack } from '../src/lib/coreStack.mjs'
+import { isCurrent } from '../src/lib/cvDates.mjs'
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const CONTENT = `${ROOT}/public/content/cv`
@@ -52,8 +54,6 @@ const WORDS = {
   es: { present: 'Presente', earlier: 'Anterior', roles: 'roles', impact: 'Logros Destacados', experience: 'Experiencia', stack: 'Stack', education: 'Educación', summary: 'Resumen', projects: 'Proyectos', tech: 'Tecnologías' }
 }
 
-/** Both spellings are accepted so a translated data file cannot break the logic. */
-const isCurrent = (v) => /^(present|presente)$/i.test(String(v ?? '').trim())
 
 function tex (s) {
   return String(s ?? '')
