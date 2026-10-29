@@ -18,6 +18,8 @@ experience:
       - Collaborating with the BriteCore engineering team across time zones
     achievements:
       - Built an AI agent that produces summarized views of insurance policies, reducing the time end users spend on manual policy lookups
+      - Built the agent harness around it — tool definitions, context assembly, guardrails and retries — and RAG pipelines that ground responses in policy data
+      - Instrumented LLM calls and agent runs with Langfuse tracing and evaluation, making behaviour observable and regressions measurable
       - Co-built a new state-machine-driven billing engine for the policy billing lifecycle
       - Built an event producer that fans BriteCore domain events to internal and external event engines, enabling near-real-time downstream consumers
       - Refactored legacy services and shipped new APIs across the BriteCore platform; upgraded internal tools from Python 2 to Python 3
@@ -29,6 +31,9 @@ experience:
       - React
       - AWS
       - Docker
+      - LangChain
+      - Langfuse
+      - RAG
 
   - id: blackboard
     company: Blackboard
