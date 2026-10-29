@@ -4,10 +4,14 @@ projects:
     description: >-
       Built an AI agent on the BriteCore SaaS platform that produces
       summarized views of insurance policies, reducing the time end users
-      spend on manual policy lookups.
+      spend on manual policy lookups. Includes the agent harness, RAG
+      retrieval over policy data and Langfuse tracing and evaluation.
     technologies:
       - Python
       - LLM
+      - LangChain
+      - RAG
+      - Langfuse
       - AWS
       - FastAPI
     url: ""

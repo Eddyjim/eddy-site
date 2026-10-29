@@ -7,9 +7,11 @@ profile:
   # hardcoded temporal claim here would silently go stale in four outputs.
   summary: >-
     Senior software engineer with 10+ years building cloud-native systems
-    on AWS. Recent work spans event-driven services, a state-machine
-    billing engine and an AI agent for insurance policy summarization.
-    Builds agent systems on MCP and LangGraph, on top of a decade across
+    on AWS, now focused on AI engineering. Builds LLM agents, agent
+    harnesses and RAG pipelines with LangChain, LangGraph and MCP, and
+    instruments them with Langfuse for tracing and evaluation. Recent work
+    includes an AI agent for insurance policy summarization, event-driven
+    services and a state-machine billing engine, on top of a decade across
     BPM/SOA consulting, payments and platform migrations.
   available: true
   availability_note: Available for new senior roles · Remote-first

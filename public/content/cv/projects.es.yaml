@@ -4,10 +4,15 @@ projects:
     description: >-
       Construí un agente de IA sobre la plataforma SaaS BriteCore que
       produce vistas resumidas de pólizas de seguros, reduciendo el tiempo
-      que los usuarios finales dedican a consultas manuales.
+      que los usuarios finales dedican a consultas manuales. Incluye el
+      harness del agente, recuperación RAG sobre datos de pólizas y
+      trazas y evaluación con Langfuse.
     technologies:
       - Python
       - LLM
+      - LangChain
+      - RAG
+      - Langfuse
       - AWS
       - FastAPI
     url: ""

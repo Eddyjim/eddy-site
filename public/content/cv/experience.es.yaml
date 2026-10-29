@@ -19,6 +19,8 @@ experience:
       - Colaboración con el equipo de ingeniería de BriteCore a través de zonas horarias
     achievements:
       - Construí un agente de IA que produce vistas resumidas de pólizas de seguros, reduciendo el tiempo que los usuarios finales dedican a consultas manuales
+      - Construí el harness del agente — definición de herramientas, ensamblado de contexto, guardrails y reintentos — y pipelines RAG que fundamentan las respuestas en datos de la póliza
+      - Instrumenté las llamadas a LLM y las ejecuciones del agente con trazas y evaluación en Langfuse, haciendo el comportamiento observable y las regresiones medibles
       - Co-construí un nuevo motor de facturación basado en máquina de estados para el ciclo de vida de facturación de pólizas
       - Construí un productor de eventos que distribuye eventos de dominio de BriteCore hacia motores internos y externos, habilitando consumidores en tiempo casi real
       - Refactoricé servicios legados y desarrollé nuevas APIs en la plataforma BriteCore; actualicé herramientas internas de Python 2 a Python 3
@@ -30,6 +32,9 @@ experience:
       - React
       - AWS
       - Docker
+      - LangChain
+      - Langfuse
+      - RAG
 
   - id: blackboard
     company: Blackboard
