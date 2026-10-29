@@ -6,11 +6,13 @@ profile:
   # experiencia ya lo indica, derivado de end_date.
   summary: >-
     Ingeniero de software senior con más de 10 años construyendo sistemas
-    cloud-native sobre AWS. Trabajo reciente en servicios basados en
-    eventos, un motor de facturación con máquina de estados y un agente de
-    IA para resumen de pólizas de seguros. Construye sistemas de agentes
-    sobre MCP y LangGraph, sobre una década en consultoría BPM/SOA, pagos
-    y migraciones de plataforma.
+    cloud-native sobre AWS, hoy enfocado en ingeniería de IA. Construye
+    agentes LLM, harnesses de agentes y pipelines RAG con LangChain,
+    LangGraph y MCP, e instrumenta todo con Langfuse para trazabilidad y
+    evaluación. Trabajo reciente: un agente de IA para resumen de pólizas
+    de seguros, servicios basados en eventos y un motor de facturación con
+    máquina de estados, sobre una década en consultoría BPM/SOA, pagos y
+    migraciones de plataforma.
   available: true
   availability_note: Disponible para nuevos roles senior · Remoto
   work_mode: Remoto (Américas / Europa)

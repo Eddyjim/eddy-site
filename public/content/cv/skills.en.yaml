@@ -52,10 +52,18 @@ categories:
         proficiency: 3
         years: 1
         featured: true
+      - name: LangChain
+        proficiency: 4
+        years: 2
+        featured: true
       - name: Langfuse
-        proficiency: 3
-        years: 1
-        featured: false
+        proficiency: 4
+        years: 2
+        featured: true
+      - name: RAG pipelines
+        proficiency: 4
+        years: 2
+        featured: true
 
   - name: Agent Engineering
     slug: agent-engineering
@@ -75,8 +83,8 @@ categories:
         featured: true
       - name: Agent harness design
         proficiency: 4
-        years: 1
-        featured: false
+        years: 2
+        featured: true
       - name: Spec-driven development
         proficiency: 4
         years: 1

@@ -26,5 +26,5 @@ services:
 
   - name: Ingeniería de IA y Agentes
     slug: ai-agent-engineering
-    description: "Diseño y entrega de sistemas basados en LLM: servidores MCP, orquestación multi-agente con LangGraph y evaluación instrumentada con Langfuse — construidos spec-first para que el comportamiento sea reproducible."
+    description: "Diseño y entrega de sistemas basados en LLM: harnesses de agentes, pipelines RAG, servidores MCP y orquestación multi-agente con LangChain y LangGraph, con trazas y evaluación en Langfuse — construidos spec-first para que el comportamiento sea reproducible."
     icon: bi-robot

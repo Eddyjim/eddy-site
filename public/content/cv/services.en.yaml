@@ -26,5 +26,5 @@ services:
 
   - name: AI & Agent Engineering
     slug: ai-agent-engineering
-    description: "Design and delivery of LLM-backed systems: MCP servers, multi-agent orchestration with LangGraph, and Langfuse-instrumented evaluation — built spec-first so behaviour stays reproducible."
+    description: "Design and delivery of LLM-backed systems: agent harnesses, RAG pipelines, MCP servers and multi-agent orchestration with LangChain and LangGraph, with Langfuse tracing and evaluation — built spec-first so behaviour stays reproducible."
     icon: bi-robot
